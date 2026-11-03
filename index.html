@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студия ремонта Люкслайн — ремонт и строительство под ключ</title>
+  <meta name="description" content="Студия ремонта Люкслайн: ремонт квартир и домов под ключ, строительство, отделка, фасады, заборы. Катав-Ивановск, Юрюзань, Кропачёво.">
+  <style>
+    :root {
+      --black: #141414;
+      --graphite: #2b2b2b;
+      --gold: #c9a24a;
+      --gold-dark: #a9852f;
+      --cream: #f6f1e7;
+      --white: #ffffff;
+      --gray: #6d6a65;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--graphite);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--black);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 2px solid var(--gold);
+    }
+    .top {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo img { height: 52px; width: auto; display: block; }
+    .phone {
+      color: var(--gold);
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .phone small { display: block; font-size: 12px; color: #bdb7a8; font-weight: normal; }
+    .phone:hover { color: #e3c373; }
+    nav { background: var(--graphite); }
+    nav ul {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+    nav a { color: var(--cream); text-decoration: none; font-size: 15px; }
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      background: var(--graphite);
+      color: var(--white);
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .hero h1 { font-size: 38px; margin-bottom: 14px; }
+    .hero h1 span { color: var(--gold); }
+    .hero p { font-size: 20px; max-width: 680px; margin: 0 auto 28px; color: #e6e1d6; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      padding: 13px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { background: #dbb55c; }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--gold);
+      color: var(--gold-dark);
+      padding: 9px 22px;
+      font-size: 15px;
+    }
+    .btn-outline:hover { background: var(--gold); color: var(--black); }
+
+    section { max-width: 1100px; margin: 0 auto; padding: 56px 20px; }
+    h2 { font-size: 30px; margin-bottom: 26px; text-align: center; }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--gold);
+      margin: 10px auto 0;
+    }
+    .lead { text-align: center; color: var(--gray); margin: -10px auto 26px; max-width: 640px; }
+
+    details {
+      background: var(--white);
+      border-radius: 8px;
+      margin-bottom: 14px;
+      border-left: 5px solid var(--gold);
+      overflow: hidden;
+    }
+    summary {
+      padding: 18px 22px;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--gold-dark); font-size: 26px; }
+    details[open] summary::after { content: "–"; }
+    .details-body { padding: 0 22px 22px; }
+    .details-body ul { margin: 0 0 18px 20px; }
+    .details-body li { margin-bottom: 4px; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .gallery .photo {
+      aspect-ratio: 4 / 3;
+      background: #e7e1d3;
+      border: 2px dashed #c4bba6;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray);
+      font-size: 13px;
+      overflow: hidden;
+    }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; }
+
+    .materials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .mat-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      border-top: 4px solid var(--gold);
+    }
+    .mat-card h3 { margin-bottom: 8px; }
+    .mat-card p { color: var(--gray); margin-bottom: 16px; font-size: 15px; }
+
+    .placeholder {
+      background: var(--white);
+      border: 2px dashed #c4bba6;
+      border-radius: 8px;
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    .contacts { background: var(--black); color: var(--white); max-width: none; }
+    .contacts .inner { max-width: 1100px; margin: 0 auto; }
+    .contact-info { text-align: center; margin-bottom: 28px; font-size: 18px; }
+    .contact-info a { color: var(--gold); text-decoration: none; }
+    form { max-width: 500px; margin: 0 auto; display: grid; gap: 14px; }
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      font-family: inherit;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #8d877a;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 28px; }
+      .phone { font-size: 18px; }
+      .logo img { height: 42px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <a class="logo" href="#top">
+      <img src="logo.png" alt="Студия ремонта Люкслайн">
+    </a>
+    <a class="phone" href="tel:+79808505898">
+      <small>Позвоните нам</small>
+      +7 980 850-58-98
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#materials">Материалы для ремонта</a></li>
+      <li><a href="#price">Цены на работы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <h1>Студия ремонта <span>Люкслайн</span></h1>
+  <p>Ремонт и строительство под ключ в Катав-Ивановске, Юрюзани, Кропачёво и окрестностях.</p>
+  <a class="btn" href="#contacts">Оставить заявку</a>
+</div>
+
+<section id="services">
+  <h2>Услуги</h2>
+  <p class="lead">Нажмите на нужное направление, чтобы увидеть подробности и примеры работ.</p>
+
+  <details>
+    <summary>Ремонт квартир и домов под ключ</summary>
+    <div class="details-body">
+      <ul>
+        <li>Полный цикл: от замеров и сметы до сдачи объекта</li>
+        <li>Черновая и чистовая отделка</li>
+        <li>Электрика, сантехника, отопление</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Кровельные работы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж кровли</li>
+        <li>Ремонт и перекрытие старых крыш</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Каркасное строительство и постройки</summary>
+    <div class="details-body">
+      <ul>
+        <li>Каркасные дома</li>
+        <li>Беседки</li>
+        <li>Бани</li>
+        <li>Навесы</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Отделочные работы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Подготовка стен и полов</li>
+        <li>Шпаклёвка</li>
+        <li>Монтаж гипсокартона</li>
+        <li>Плиточные работы</li>
+        <li>Покраска и поклейка обоев</li>
+        <li>Стяжка пола</li>
+        <li>Укладка ламината и линолеума</li>
+        <li>Установка дверей</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Отделка фасадов</summary>
+    <div class="details-body">
+      <ul>
+        <li>Сайдинг</li>
+        <li>Термопанели</li>
+        <li>Штукатурка фасадов</li>
+        <li>Покраска фасадов</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Заборы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Из сетки-рабицы</li>
+        <li>Из профлиста</li>
+        <li>Деревянные</li>
+        <li>Из евроштакетника</li>
+        <li>Ворота и калитки</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Электрика</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж и замена проводки</li>
+        <li>Установка розеток, выключателей, щитков</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Сантехника</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж водопровода и канализации</li>
+        <li>Установка сантехнических приборов</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>Отопление</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж систем отопления</li>
+        <li>Установка радиаторов и котлов</li>
+      </ul>
+      <div class="gallery">
+        <div class="photo">Фото 1</div><div class="photo">Фото 2</div><div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div><div class="photo">Фото 5</div><div class="photo">Фото 6</div>
+      </div>
+      <a class="btn btn-outline" href="#price">Узнать цену</a>
+    </div>
+  </details>
+</section>
+
+<section id="materials">
+  <h2>Материалы для ремонта</h2>
+  <p class="lead">Цены на материалы меняются, поэтому актуальную стоимость уточняйте по телефону.</p>
+  <div class="materials">
+    <div class="mat-card">
+      <h3>Пластиковые окна</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <h3>Утеплитель</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <h3>ОСБ-плита</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <h3>Двери</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <h2>Цены на работы</h2>
+  <div class="placeholder">
+    <p>Стоимость работ зависит от объёма и сложности. Позвоните или оставьте заявку, и мы рассчитаем смету.</p>
+    <!-- Сюда позже добавим таблицу цен на работы -->
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="inner">
+    <h2>Контакты</h2>
+    <div class="contact-info">
+      <p>Телефон: <a href="tel:+79808505898">+7 980 850-58-98</a></p>
+      <p>Почта: <a href="mailto:edolfs@mail.ru">edolfs@mail.ru</a></p>
+      <p>Катав-Ивановск, Юрюзань, Кропачёво и окрестности</p>
+    </div>
+    <form action="mailto:edolfs@mail.ru" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <textarea name="message" rows="4" placeholder="Что нужно сделать?"></textarea>
+      <button class="btn" type="submit">Отправить заявку</button>
+    </form>
+  </div>
+</section>
+
+<footer>© 2026 Студия ремонта Люкслайн. Все права защищены.</footer>
+
+</body>
+</html>
