@@ -130,11 +130,217 @@ summary::-webkit-details-marker { display: none; }
 summary::after { content: "+"; color: var(--gold-dark); font-size: 26px; }
 details[open] summary::after { content: "–"; }
 .details-body { padding: 0 22px 22px; }
-.d20px; } .details-body li { margin-bottom: 4px; } .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; } .photo { aspect-ratio: 4 / 3; background: #e7e1d3; border: 2px dashed #c4bba6; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 13px; overflow: hidden; text-align: center; } .photo img { width: 100%; height: 100%; object-fit: cover; display: block; } .materials { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; } .mat-card { background: var(--white); border-radius: 8px; padding: 16px 16px 24px; text-align: center; border-top: 4px solid var(--gold); } .mat-photo { margin-bottom: 14px; } .mat-card h3 { margin-bottom: 8px; } .mat-card p { color: var(--gray); margin-bottom: 16px; font-size: 15px; } .price-group { border-left-color: var(--gold); } .price-group summary { color: var(--gold-dark); font-weight: 800; font-size: 20px; } .price-body { padding: 0 12px 16px; overflow-x: auto; } .price-body table { width: 100%; border-collapse: collapse; } .price-body th { background: var(--black); color: var(--gold); text-align: left; padding: 12px; } .price-body td { padding: 12px; border-bottom: 1px solid #e7e1d3; } .price-body td:last-child, .price-body th:last-child { white-space: nowrap; } .price-note { margin-top: 18px; background: var(--white); border-left: 5px solid var(--gold); border-radius: 8px; padding: 18px 22px; color: var(--graphite); font-size: 15px; } .price-note p { margin-bottom: 8px; } .price-note p:last-child { margin-bottom: 0; } .price-note b { color: var(--gold-dark); } .contacts { background: var(--black); color: var(--white); max-width: none; } .contacts .inner { max-width: 1100px; margin: 0 auto; } .contact-info { text-align: center; margin-bottom: 28px; font-size: 18px; } .contact-info a { color: var(--gold); text-decoration: none; } form { max-width: 500px; margin: 0 auto; display: grid; gap: 14px; } input, textarea { padding: 12px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit; } footer { text-align: center; padding: 20px; background: #0b0b0b; color: #8d877a; font-size: 14px; } @media (max-width: 600px) { .gallery { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 28px; } .phone { font-size: 18px; } .logo img { height: 42px; } .price-body th, .price-body td { padding: 8px 6px; font-size: 14px; } } </style> </head> <body> <header> <div class="top"> <a class="logo" href="#top"> <img src="logo.png" alt="Студия ремонта Люкслайн"> </a> <a class="phone" href="tel:+79808505898"> <small>Позвоните нам</small> +7 980 850-58-98 </a> </div> <nav> <ul> <li><a href="#services">Услуги</a></li> <li><a href="#materials">Материалы для ремонта</a></li> <li><a href="#price">Цены на работы</a></li> <li><a href="#contacts">Контакты</a></li> </ul> </nav> </header> <div class="hero" id="top"> <h1>Студия ремонта <span>Люкслайн</span></h1> <p>Ремонт и строительство под ключ в Усть-Катаве, Катав-Ивановске, Юрюзани, Кропачёво и окрестностях.</p> <p class="fixed">Фиксированная цена: стоимость закрепляется в договоре и не меняется в процессе работ.</p> <a class="btn" href="#contacts">Оставить заявку</a> </div> <section id="services"> <h2>Услуги</h2> <p class="lead">Нажмите на нужное направление, чтобы увидеть подробности и примеры работ.</p> <details> <summary>Ремонт квартир и домов под ключ</summary> <div class="details-body"> <ul
-10:25
-> <li>Полный цикл: от замеров и сметы до сдачи объекта</li> <li>Черновая и чистовая отделка</li> <li>Электрика, сантехника, отопление</li> </ul> <div class="gallery"><div class="photo"><span>remont1.jpg</span></div><div class="photo"><span>remont2.jpg</span></div><div class="photo"><span>remont3.jpg</span></div><div class="photo"><span>remont4.jpg</span></div><div class="photo"><span>remont5.jpg</span></div><div class="photo"><span>remont6.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Кровельные работы</summary> <div class="details-body"> <ul> <li>Монтаж кровли</li> <li>Ремонт и перекрытие старых крыш</li> </ul> <div class="gallery"><div class="photo"><span>krovlya1.jpg</span></div><div class="photo"><span>krovlya2.jpg</span></div><div class="photo"><span>krovlya3.jpg</span></div><div class="photo"><span>krovlya4.jpg</span></div><div class="photo"><span>krovlya5.jpg</span></div><div class="photo"><span>krovlya6.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Каркасное строительство и постройки</summary> <div class="details-body"> <ul> <li>Каркасные дома</li> <li>Беседки</li> <li>Бани</li> <li>Навесы</li> </ul> <div class="gallery"><div class="photo"><span>karkas1.jpg</span></div><div class="photo"><span>karkas2.jpg</span></div><div class="photo"><span>karkas3.jpg</span></div><div class="photo"><span>karkas4.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Отделочные работы</summary> <div class="details-body"> <ul> <li>Подготовка стен и полов</li> <li>Шпаклёвка</li> <li>Монтаж гипсокартона</li> <li>Плиточные работы</li> <li>Покраска и поклейка обоев</li> <li>Стяжка пола</li> <li>Укладка ламината и линолеума</li> <li>Установка дверей</li> </ul> <div class="gallery"><div class="photo"><span>otdelka1.jpg</span></div><div class="photo"><span>otdelka2.jpg</span></div><div class="photo"><span>otdelka3.jpg</span></div><div class="photo"><span>otdelka4.jpg</span></div><div class="photo"><span>otdelka5.jpg</span></div><div class="photo"><span>otdelka6.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Отделка фасадов</summary> <div class="details-body"> <ul> <li>Сайдинг</li> <li>Термопанели</li> <li>Штукатурка фасадов</li> <li>Покраска фасадов</li> </ul> <div class="gallery"><div class="photo"><span>fasad1.jpg</span></div><div class="photo"><span>fasad2.jpg</span></div><div class="photo"><span>fasad3.jpg</span></div><div class="photo"><span>fasad4.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Заборы</summary> <div class="details-body"> <ul> <li>Из сетки-рабицы</li> <li>Из профлиста</li> <li>Деревянные</li> <li>Из евроштакетника</li> <li>Ворота и калитки</li> </ul> <div class="gallery"><div class="photo"><span>zabor1.jpg</span></div><div class="photo"><span>zabor2.jpg</span></div><div class="photo"><span>zabor3.jpg</span></div><div class="photo"><span>zabor4.jpg</span></div><div class="photo"><span>zabor5.jpg</span></div><div class="photo"><span>zabor6.jpg</span></div></div> <a class="btn btn-outline" href="#price">Узнать цену</a> </div> </details> <details> <summary>Электрика</summary> <div class="detail
-etails-body ul { margin: 0 0 18px
-s-body">
+.details-body ul { margin: 0 0 18px 20px; }
+.details-body li { margin-bottom: 4px; }
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+margin-bottom: 18px;
+}
+.photo {
+aspect-ratio: 4 / 3;
+background: #e7e1d3;
+border: 2px dashed #c4bba6;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--gray);
+font-size: 13px;
+overflow: hidden;
+text-align: center;
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.materials {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 20px;
+}
+.mat-card {
+background: var(--white);
+border-radius: 8px;
+padding: 16px 16px 24px;
+text-align: center;
+border-top: 4px solid var(--gold);
+}
+.mat-photo { margin-bottom: 14px; }
+.mat-card h3 { margin-bottom: 8px; }
+.mat-card p { color: var(--gray); margin-bottom: 16px; font-size: 15px; }
+
+.price-group { border-left-color: var(--gold); }
+.price-group summary { color: var(--gold-dark); font-weight: 800; font-size: 20px; }
+.price-body { padding: 0 12px 16px; overflow-x: auto; }
+.price-body table { width: 100%; border-collapse: collapse; }
+.price-body th { background: var(--black); color: var(--gold); text-align: left; padding: 12px; }
+.price-body td { padding: 12px; border-bottom: 1px solid #e7e1d3; }
+.price-body td:last-child, .price-body th:last-child { white-space: nowrap; }
+.price-note {
+margin-top: 18px;
+background: var(--white);
+border-left: 5px solid var(--gold);
+border-radius: 8px;
+padding: 18px 22px;
+color: var(--graphite);
+font-size: 15px;
+}
+.price-note p { margin-bottom: 8px; }
+.price-note p:last-child { margin-bottom: 0; }
+.price-note b { color: var(--gold-dark); }
+
+.contacts { background: var(--black); color: var(--white); max-width: none; }
+.contacts .inner { max-width: 1100px; margin: 0 auto; }
+.contact-info { text-align: center; margin-bottom: 28px; font-size: 18px; }
+.contact-info a { color: var(--gold); text-decoration: none; }
+form { max-width: 500px; margin: 0 auto; display: grid; gap: 14px; }
+input, textarea {
+padding: 12px;
+border-radius: 6px;
+border: none;
+font-size: 16px;
+font-family: inherit;
+}
+footer {
+text-align: center;
+padding: 20px;
+background: #0b0b0b;
+color: #8d877a;
+font-size: 14px;
+}
+
+@media (max-width: 600px) {
+.gallery { grid-template-columns: repeat(2, 1fr); }
+.hero h1 { font-size: 28px; }
+.phone { font-size: 18px; }
+.logo img { height: 42px; }
+.price-body th, .price-body td { padding: 8px 6px; font-size: 14px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="top">
+<a class="logo" href="#top">
+<img src="logo.png" alt="Студия ремонта Люкслайн">
+</a>
+<a class="phone" href="tel:+79808505898">
+<small>Позвоните нам</small>
++7 980 850-58-98
+</a>
+</div>
+<nav>
+<ul>
+<li><a href="#services">Услуги</a></li>
+<li><a href="#materials">Материалы для ремонта</a></li>
+<li><a href="#price">Цены на работы</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="hero" id="top">
+<h1>Студия ремонта <span>Люкслайн</span></h1>
+<p>Ремонт и строительство под ключ в Усть-Катаве, Катав-Ивановске, Юрюзани, Кропачёво и окрестностях.</p>
+<p class="fixed">Фиксированная цена: стоимость закрепляется в договоре и не меняется в процессе работ.</p>
+<a class="btn" href="#contacts">Оставить заявку</a>
+</div>
+
+<section id="services">
+<h2>Услуги</h2>
+<p class="lead">Нажмите на нужное направление, чтобы увидеть подробности и примеры работ.</p>
+
+<details>
+<summary>Ремонт квартир и домов под ключ</summary>
+<div class="details-body">
+<ul>
+<li>Полный цикл: от замеров и сметы до сдачи объекта</li>
+<li>Черновая и чистовая отделка</li>
+<li>Электрика, сантехника, отопление</li>
+</ul>
+<div class="gallery"><div class="photo"><span>remont1.jpg</span></div><div class="photo"><span>remont2.jpg</span></div><div class="photo"><span>remont3.jpg</span></div><div class="photo"><span>remont4.jpg</span></div><div class="photo"><span>remont5.jpg</span></div><div class="photo"><span>remont6.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Кровельные работы</summary>
+<div class="details-body">
+<ul>
+<li>Монтаж кровли</li>
+<li>Ремонт и перекрытие старых крыш</li>
+</ul>
+<div class="gallery"><div class="photo"><span>krovlya1.jpg</span></div><div class="photo"><span>krovlya2.jpg</span></div><div class="photo"><span>krovlya3.jpg</span></div><div class="photo"><span>krovlya4.jpg</span></div><div class="photo"><span>krovlya5.jpg</span></div><div class="photo"><span>krovlya6.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Каркасное строительство и постройки</summary>
+<div class="details-body">
+<ul>
+<li>Каркасные дома</li>
+<li>Беседки</li>
+<li>Бани</li>
+<li>Навесы</li>
+</ul>
+<div class="gallery"><div class="photo"><span>karkas1.jpg</span></div><div class="photo"><span>karkas2.jpg</span></div><div class="photo"><span>karkas3.jpg</span></div><div class="photo"><span>karkas4.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Отделочные работы</summary>
+<div class="details-body">
+<ul>
+<li>Подготовка стен и полов</li>
+<li>Шпаклёвка</li>
+<li>Монтаж гипсокартона</li>
+<li>Плиточные работы</li>
+<li>Покраска и поклейка обоев</li>
+<li>Стяжка пола</li>
+<li>Укладка ламината и линолеума</li>
+<li>Установка дверей</li>
+</ul>
+<div class="gallery"><div class="photo"><span>otdelka1.jpg</span></div><div class="photo"><span>otdelka2.jpg</span></div><div class="photo"><span>otdelka3.jpg</span></div><div class="photo"><span>otdelka4.jpg</span></div><div class="photo"><span>otdelka5.jpg</span></div><div class="photo"><span>otdelka6.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Отделка фасадов</summary>
+<div class="details-body">
+<ul>
+<li>Сайдинг</li>
+<li>Термопанели</li>
+<li>Штукатурка фасадов</li>
+<li>Покраска фасадов</li>
+</ul>
+<div class="gallery"><div class="photo"><span>fasad1.jpg</span></div><div class="photo"><span>fasad2.jpg</span></div><div class="photo"><span>fasad3.jpg</span></div><div class="photo"><span>fasad4.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Заборы</summary>
+<div class="details-body">
+<ul>
+<li>Из сетки-рабицы</li>
+<li>Из профлиста</li>
+<li>Деревянные</li>
+<li>Из евроштакетника</li>
+<li>Ворота и калитки</li>
+</ul>
+<div class="gallery"><div class="photo"><span>zabor1.jpg</span></div><div class="photo"><span>zabor2.jpg</span></div><div class="photo"><span>zabor3.jpg</span></div><div class="photo"><span>zabor4.jpg</span></div><div class="photo"><span>zabor5.jpg</span></div><div class="photo"><span>zabor6.jpg</span></div></div>
+<a class="btn btn-outline" href="#price">Узнать цену</a>
+</div>
+</details>
+
+<details>
+<summary>Электрика</summary>
+<div class="details-body">
 <ul>
 <li>Прокладка и замена электропроводки</li>
 <li>Установка розеток, выключателей и электрощитков</li>
@@ -175,124 +381,158 @@ s-body">
 <a class="btn btn-outline" href="#price">Узнать цену</a>
 </div>
 </details>
+
 </section>
 
 <section id="materials">
-  <h2>Материалы для ремонта</h2>
-  <p class="lead">Цены на материалы меняются, поэтому актуальную стоимость уточняйте по телефону.</p>
-  <div class="materials">
-    <div class="mat-card">
-      <h3>Пластиковые окна</h3>
-      <p>Цену уточняйте по телефону</p>
-      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-    </div>
-    <div class="mat-card">
-      <h3>Утеплитель</h3>
-      <p>Цену уточняйте по телефону</p>
-      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-    </div>
-    <div class="mat-card">
-      <h3>ОСБ-плита</h3>
-      <p>Цену уточняйте по телефону</p>
-      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-    </div>
-    <div class="mat-card">
-      <h3>Двери</h3>
-      <p>Цену уточняйте по телефону</p>
-      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-    </div>
-  </div>
+<h2>Материалы для ремонта</h2>
+<p class="lead">Цены на материалы меняются, поэтому актуальную стоимость уточняйте по телефону.</p>
+<div class="materials">
+<div class="mat-card">
+<div class="photo mat-photo"><span>okna.jpg</span></div>
+<h3>Пластиковые окна</h3>
+<p>Цену уточняйте по телефону</p>
+<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+</div>
+<div class="mat-card">
+<div class="photo mat-photo"><span>uteplitel.jpg</span></div>
+<h3>Утеплитель</h3>
+<p>Цену уточняйте по телефону</p>
+<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+</div>
+<div class="mat-card">
+<div class="photo mat-photo"><span>osb.jpg</span></div>
+<h3>ОСБ-плита</h3>
+<p>Цену уточняйте по телефону</p>
+<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+</div>
+<div class="mat-card">
+<div class="photo mat-photo"><span>dveri.jpg</span></div>
+<h3>Двери</h3>
+<p>Цену уточняйте по телефону</p>
+<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+</div>
+</div>
 </section>
 
 <section id="price">
-  <h2>Цены на работы</h2>
- <div class="price-table">
-    <table>
-      <tr><th>Вид работ</th><th>Единица</th><th>Цена, ₽</th></tr>
+<h2>Цены на работы</h2>
+<p class="lead">Нажмите на раздел, чтобы увидеть расценки.</p>
 
-      <tr class="group"><td colspan="3">Отделочные работы</td></tr>
-      <tr><td>Штукатурные работы по маякам до 30мм</td><td>м²</td><td>750</td></tr>
-      <tr><td>Штукатурные работы по маякам более 30мм</td><td>м²</td><td>950</td></tr>
-      <tr><td>Штукатурные работы откосы</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Штукатурные работы изогнутые поверхности</td><td>м²</td><td>1400</td></tr>
-      <tr><td>Штукатурная сетка</td><td>м²</td><td>250</td></tr>
-      <tr><td>Штукатурные работы потолки по маякам до 30мм</td><td>м²</td><td>1400</td></tr>
-      <tr><td>Штукатурные работы потолки по маякам более 30мм</td><td>м²</td><td>1550</td></tr>
-      <tr><td>Грунтовка стен</td><td>м²</td><td>80</td></tr>
-      <tr><td>Грунтовка потолков</td><td>м²</td><td>120</td></tr>
-      <tr><td>Стеклохолст</td><td>м²</td><td>380</td></tr>
-      <tr><td>Шпаклевка швы ГКЛ</td><td>пог.метр</td><td>200</td></tr>
-      <tr><td>Перфорированый угол</td><td>пог.метр</td><td>250</td></tr>
-      <tr><td>Шпаклевка под обои</td><td>м²</td><td>450</td></tr>
-      <tr><td>Шпаклевка под покраску</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Шпаклевка потолок под покраску</td><td>м²</td><td>1200</td></tr>
-      <tr><td>Шпаклевка откосы под покраску</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Шлифовка стен</td><td>м²</td><td>250</td></tr>
-      <tr><td>Шлифовка потолка</td><td>м²</td><td>320</td></tr>
-      <tr><td>Покраска стен 2 слоя</td><td>м²</td><td>400</td></tr>
-      <tr><td>Покраска потолка</td><td>м²</td><td>500</td></tr>
-      <tr><td>Монтаж ГКЛ на стену 1 слой</td><td>м²</td><td>800</td></tr>
-      <tr><td>Монтаж ГКЛ на стену 2 слоя</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Монтаж ГКЛ перегородки 1 слой</td><td>м²</td><td>1300</td></tr>
-      <tr><td>Монтаж ГКЛ перегородки 2 слоя</td><td>м²</td><td>1500</td></tr>
-      <tr><td> ГКЛ фрезеровка</td><td>пог.метр</td><td>200</td></tr>
-      <tr><td>Монтаж ГКЛ на клей</td><td>м²</td><td>600</td></tr>
-      <tr><td>Потолок ГКЛ 1 уровень</td><td>м²</td><td>1400</td></tr>
-      <tr><td>Потолок ГКЛ 2 уровня</td><td>м²</td><td>1800</td></tr>
-      <tr><td>Откосы ГКЛ </td><td>м²</td><td>900</td></tr>
-      <tr><td>Прямая укладка керамической плитки</td><td>м²</td><td>2300</td></tr>
-      <tr><td>Прямая укладка керамогранита до 60 см включительно</td><td>м²</td><td>2800</td></tr>
-      <tr><td>Прямая укладка керамогранита (свыше 60 см и до 120 см включительно)</td><td>м²</td><td>3500</td></tr>
-      <tr><td>Укладка мозаики</td><td>м²</td><td>4500</td></tr>
-      <tr><td>Устройство цементной затирки в межплиточных швах</td><td>м²</td><td>200</td></tr>
-      <tr><td>Устройство двухкомпонентной затирки в межплиточных швах</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Поклейка обоев бумажных</td><td>м²</td><td>380</td></tr>
-      <tr><td>Поклейка обоев виниловые/флизелиновые</td><td>м²</td><td>400</td></tr>
-      <tr><td>Наливной пол</td><td>м²</td><td>500</td></tr>
-      <tr><td>Цементно-песчаная стяжка до 50мм</td><td>м²</td><td>800</td></tr>
-      <tr><td>Цементно-песчаная стяжка более 50мм</td><td>м²</td><td>1000</td></tr>
-      <tr><td>Армирующая сетка</td><td>м²</td><td>200</td></tr>
-      <tr><td>Укладка ламината</td><td>м²</td><td>530</td></tr>
-      <tr><td>Укладка линолеума</td><td>м²</td><td>400</td></tr>
-      <tr><td>Установка двери</td><td>шт.</td><td>от 4500</td></tr>
+<details class="price-group">
+<summary>Отделочные работы</summary>
+<div class="price-body">
+<table>
+<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
+<tr><td>Штукатурные работы по маякам до 30мм</td><td>м²</td><td>от 680</td></tr>
+<tr><td>Штукатурные работы по маякам более 30мм</td><td>м²</td><td>от 860</td></tr>
+<tr><td>Штукатурные работы откосы</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Штукатурные работы изогнутые поверхности</td><td>м²</td><td>от 1260</td></tr>
+<tr><td>Штукатурная сетка</td><td>м²</td><td>от 220</td></tr>
+<tr><td>Штукатурные работы потолки по маякам до 30мм</td><td>м²</td><td>от 1260</td></tr>
+<tr><td>Штукатурные работы потолки по маякам более 30мм</td><td>м²</td><td>от 1400</td></tr>
+<tr><td>Грунтовка стен</td><td>м²</td><td>от 70</td></tr>
+<tr><td>Грунтовка потолков</td><td>м²</td><td>от 110</td></tr>
+<tr><td>Стеклохолст</td><td>м²</td><td>от 340</td></tr>
+<tr><td>Шпаклёвка швы ГКЛ</td><td>пог. м</td><td>от 180</td></tr>
+<tr><td>Перфорированный угол</td><td>пог. м</td><td>от 220</td></tr>
+<tr><td>Шпаклёвка под обои</td><td>м²</td><td>от 400</td></tr>
+<tr><td>Шпаклёвка под покраску</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Шпаклёвка потолок под покраску</td><td>м²</td><td>от 1080</td></tr>
+<tr><td>Шпаклёвка откосы под покраску</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Шлифовка стен</td><td>м²</td><td>от 220</td></tr>
+<tr><td>Шлифовка потолка</td><td>м²</td><td>от 290</td></tr>
+<tr><td>Покраска стен 2 слоя</td><td>м²</td><td>от 360</td></tr>
+<tr><td>Покраска потолка</td><td>м²</td><td>от 450</td></tr>
+<tr><td>Монтаж ГКЛ на стену 1 слой</td><td>м²</td><td>от 720</td></tr>
+<tr><td>Монтаж ГКЛ на стену 2 слоя</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Монтаж ГКЛ перегородки 1 слой</td><td>м²</td><td>от 1170</td></tr>
+<tr><td>Монтаж ГКЛ перегородки 2 слоя</td><td>м²</td><td>от 1350</td></tr>
+<tr><td>ГКЛ фрезеровка</td><td>пог. м</td><td>от 180</td></tr>
+<tr><td>Монтаж ГКЛ на клей</td><td>м²</td><td>от 540</td></tr>
+<tr><td>Потолок ГКЛ 1 уровень</td><td>м²</td><td>от 1260</td></tr>
+<tr><td>Потолок ГКЛ 2 уровня</td><td>м²</td><td>от 1620</td></tr>
+<tr><td>Откосы ГКЛ</td><td>м²</td><td>от 810</td></tr>
+<tr><td>Прямая укладка керамической плитки</td><td>м²</td><td>от 2070</td></tr>
+<tr><td>Прямая укладка керамогранита до 60 см включительно</td><td>м²</td><td>от 2520</td></tr>
+<tr><td>Прямая укладка керамогранита (свыше 60 см и до 120 см включительно)</td><td>м²</td><td>от 3150</td></tr>
+<tr><td>Укладка мозаики</td><td>м²</td><td>от 4050</td></tr>
+<tr><td>Устройство цементной затирки в межплиточных швах</td><td>м²</td><td>от 180</td></tr>
+<tr><td>Устройство двухкомпонентной затирки в межплиточных швах</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Поклейка обоев бумажных</td><td>м²</td><td>от 340</td></tr>
+<tr><td>Поклейка обоев виниловых/флизелиновых</td><td>м²</td><td>от 360</td></tr>
+<tr><td>Наливной пол</td><td>м²</td><td>от 450</td></tr>
+<tr><td>Цементно-песчаная стяжка до 50мм</td><td>м²</td><td>от 720</td></tr>
+<tr><td>Цементно-песчаная стяжка более 50мм</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Армирующая сетка</td><td>м²</td><td>от 180</td></tr>
+<tr><td>Укладка ламината</td><td>м²</td><td>от 480</td></tr>
+<tr><td>Укладка линолеума</td><td>м²</td><td>от 360</td></tr>
+<tr><td>Установка двери</td><td>шт.</td><td>от 4050</td></tr>
+</table>
+</div>
+</details>
 
-      <tr class="group"><td colspan="3">Фасады</td></tr>
-      <tr><td>Монтаж сайдинга</td><td>м²</td><td>от 1000</td></tr>
-      <tr><td>Монтаж термопанелей</td><td>м²</td><td>от ___</td></tr>
-      <tr><td>Штукатурка фасада</td><td>м²</td><td>от ___</td></tr>
-      <tr><td>Покраска фасада</td><td>м²</td><td>от ___</td></tr>
+<details class="price-group">
+<summary>Фасады</summary>
+<div class="price-body">
+<table>
+<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
+<tr><td>Монтаж сайдинга</td><td>м²</td><td>от 900</td></tr>
+<tr><td>Монтаж термопанелей</td><td>м²</td><td>от 610</td></tr>
+<tr><td>Штукатурка фасада</td><td>м²</td><td>от 450</td></tr>
+<tr><td>Покраска фасада</td><td>м²</td><td>от 360</td></tr>
+</table>
+</div>
+</details>
 
-      <tr class="group"><td colspan="3">Заборы</td></tr>
-      <tr><td>Забор из сетки-рабицы</td><td>п. м</td><td>от ___</td></tr>
-      <tr><td>Забор из профлиста</td><td>п. м</td><td>1200</td></tr>
-      <tr><td>Деревянный забор</td><td>п. м</td><td>от ___</td></tr>
-      <tr><td>Забор из евроштакетника</td><td>п. м</td><td>от ___</td></tr>
-      <tr><td>Ворота и калитка</td><td>шт.</td><td>от ___</td></tr>
+<details class="price-group">
+<summary>Заборы</summary>
+<div class="price-body">
+<table>
+<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
+<tr><td>Забор из сетки-рабицы</td><td>пог. м</td><td>от 400</td></tr>
+<tr><td>Забор из профлиста</td><td>пог. м</td><td>от 1080</td></tr>
+<tr><td>Деревянный забор</td><td>пог. м</td><td>от 630</td></tr>
+<tr><td>Забор из евроштакетника</td><td>пог. м</td><td>от 580</td></tr>
+<tr><td>Ворота и калитка</td><td>шт.</td><td>от 3600</td></tr>
+</table>
+</div>
+</details>
 
-      <tr class="group"><td colspan="3">Инженерные работы</td></tr>
-      <tr><td>Электрика: точка (розетка, выключатель)</td><td>шт.</td><td>от ___</td></tr>
-      <tr><td>Сантехника: установка прибора</td><td>шт.</td><td>от ___</td></tr>
-      <tr><td>Монтаж радиатора отопления</td><td>шт.</td><td>от ___</td></tr>
-    </table>
-    <p class="price-note">Точная стоимость зависит от объёма и сложности. Звоните: +7 980 850-58-98</p>
-  </div>
+<details class="price-group">
+<summary>Инженерные работы</summary>
+<div class="price-body">
+<table>
+<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
+<tr><td>Электрика: точка (розетка, выключатель)</td><td>шт.</td><td>по запросу</td></tr>
+<tr><td>Сантехника: установка прибора</td><td>шт.</td><td>по запросу</td></tr>
+<tr><td>Монтаж радиатора отопления</td><td>шт.</td><td>по запросу</td></tr>
+</table>
+</div>
+</details>
+
+<div class="price-note">
+<p><b>Указаны цены эконом-варианта.</b> Работаем в трёх вариантах: эконом, стандарт и премиум. Итоговая цена зависит от выбранного варианта, объёма и сложности работ.</p>
+<p><b>Фиксированная цена.</b> Стоимость закрепляется в договоре и не меняется в процессе выполнения заказа.</p>
+<p>Расчёт и консультация: <a href="tel:+79808505898" style="color:var(--gold-dark);font-weight:bold;text-decoration:none">+7 980 850-58-98</a></p>
+</div>
 </section>
 
 <section id="contacts" class="contacts">
-  <div class="inner">
-    <h2>Контакты</h2>
-    <div class="contact-info">
-      <p>Телефон: <a href="tel:+79808505898">+7 980 850-58-98</a></p>
-      <p>Почта: <a href="mailto:edolfs@mail.ru">edolfs@mail.ru</a></p>
-      <p>Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво и окрестности</p>
-    </div>
-    <form action="mailto:edolfs@mail.ru" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="tel" name="phone" placeholder="Телефон" required>
-      <textarea name="message" rows="4" placeholder="Что нужно сделать?"></textarea>
-      <button class="btn" type="submit">Отправить заявку</button>
-    </form>
-  </div>
+<div class="inner">
+<h2>Контакты</h2>
+<div class="contact-info">
+<p>Телефон: <a href="tel:+79808505898">+7 980 850-58-98</a></p>
+<p>Почта: <a href="mailto:edolfs@mail.ru">edolfs@mail.ru</a></p>
+<p>Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво и окрестности</p>
+</div>
+<form action="mailto:edolfs@mail.ru" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Ваше имя" required>
+<input type="tel" name="phone" placeholder="Телефон" required>
+<textarea name="message" rows="4" placeholder="Что нужно сделать?"></textarea>
+<button class="btn" type="submit">Отправить заявку</button>
+</form>
+</div>
 </section>
 
 <footer>© 2026 Студия ремонта Люкслайн. Все права защищены.</footer>
