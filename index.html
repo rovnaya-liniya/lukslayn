@@ -1,541 +1,1399 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Студия ремонта Люкслайн — ремонт и строительство под ключ</title>
-<meta name="description" content="Студия ремонта Люкслайн: ремонт квартир и домов под ключ, строительство, отделка, фасады, заборы. Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво.">
-<style>
-:root {
---black: #141414;
---graphite: #2b2b2b;
---gold: #c9a24a;
---gold-dark: #a9852f;
---cream: #f6f1e7;
---white: #ffffff;
---gray: #6d6a65;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-font-family: Arial, Helvetica, sans-serif;
-color: var(--graphite);
-background: var(--cream);
-line-height: 1.6;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студия ремонта Люкслайн — ремонт и строительство под ключ</title>
+  <meta name="description" content="Студия ремонта Люкслайн: ремонт квартир и домов под ключ, строительство, отделка, фасады, заборы. Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво.">
+  <style>
+    :root {
+      --black: #141414;
+      --graphite: #2b2b2b;
+      --gold: #c9a24a;
+      --gold-dark: #a9852f;
+      --cream: #f6f1e7;
+      --white: #ffffff;
+      --gray: #6d6a65;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--graphite);
+      background: var(--cream);
+      line-height: 1.6;
+    }
 
-header {
-background: var(--black);
-position: sticky;
-top: 0;
-z-index: 10;
-border-bottom: 2px solid var(--gold);
-}
-.top {
-max-width: 1100px;
-margin: 0 auto;
-padding: 10px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 14px;
-}
-.logo { display: flex; align-items: center; text-decoration: none; }
-.logo img { height: 52px; width: auto; display: block; }
-.phone {
-color: var(--gold);
-font-size: 22px;
-font-weight: bold;
-text-decoration: none;
-white-space: nowrap;
-text-align: right;
-}
-.phone small { display: block; font-size: 12px; color: #bdb7a8; font-weight: normal; }
-.phone:hover { color: #e3c373; }
-nav { background: var(--graphite); }
-nav ul {
-max-width: 1100px;
-margin: 0 auto;
-padding: 8px 20px;
-list-style: none;
-display: flex;
-gap: 22px;
-flex-wrap: wrap;
-}
-nav a { color: var(--cream); text-decoration: none; font-size: 15px; }
-nav a:hover { color: var(--gold); }
+    header {
+      background: var(--black);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 2px solid var(--gold);
+    }
+    .top {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo img { height: 52px; width: auto; display: block; }
+    .phone {
+      color: var(--gold);
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .phone small { display: block; font-size: 12px; color: #bdb7a8; font-weight: normal; }
+    .phone:hover { color: #e3c373; }
+    nav { background: var(--graphite); }
+    nav ul {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+    nav a { color: var(--cream); text-decoration: none; font-size: 15px; }
+    nav a:hover { color: var(--gold); }
 
-.hero {
-background: var(--graphite);
-color: var(--white);
-text-align: center;
-padding: 90px 20px;
-}
-.hero h1 { font-size: 38px; margin-bottom: 14px; }
-.hero h1 span { color: var(--gold); }
-.hero p { font-size: 20px; max-width: 680px; margin: 0 auto 18px; color: #e6e1d6; }
-.hero .fixed { color: var(--gold); font-weight: bold; font-size: 18px; margin-bottom: 28px; }
-.btn {
-display: inline-block;
-background: var(--gold);
-color: var(--black);
-padding: 13px 30px;
-border-radius: 6px;
-text-decoration: none;
-font-size: 17px;
-font-weight: bold;
-border: none;
-cursor: pointer;
-}
-.btn:hover { background: #dbb55c; }
-.btn-outline {
-background: transparent;
-border: 2px solid var(--gold);
-color: var(--gold-dark);
-padding: 9px 22px;
-font-size: 15px;
-}
-.btn-outline:hover { background: var(--gold); color: var(--black); }
+    .hero {
+      background: var(--graphite);
+      color: var(--white);
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .hero h1 { font-size: 38px; margin-bottom: 14px; }
+    .hero h1 span { color: var(--gold); }
+    .hero p { font-size: 20px; max-width: 680px; margin: 0 auto 28px; color: #e6e1d6; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      padding: 13px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { background: #dbb55c; }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--gold);
+      color: var(--gold-dark);
+      padding: 9px 22px;
+      font-size: 15px;
+    }
+    .btn-outline:hover { background: var(--gold); color: var(--black); }
 
-section { max-width: 1100px; margin: 0 auto; padding: 56px 20px; }
-h2 { font-size: 30px; margin-bottom: 26px; text-align: center; }
-h2::after {
-content: "";
-display: block;
-width: 60px;
-height: 4px;
-background: var(--gold);
-margin: 10px auto 0;
-}
-.lead { text-align: center; color: var(--gray); margin: -10px auto 26px; max-width: 640px; }
+    section { max-width: 1100px; margin: 0 auto; padding: 56px 20px; }
+    h2 { font-size: 30px; margin-bottom: 26px; text-align: center; }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--gold);
+      margin: 10px auto 0;
+    }
+    .lead { text-align: center; color: var(--gray); margin: -10px auto 26px; max-width: 640px; }
 
-details {
-background: var(--white);
-border-radius: 8px;
-margin-bottom: 14px;
-border-left: 5px solid var(--gold);
-overflow: hidden;
-}
-summary {
-padding: 18px 22px;
-font-size: 19px;
-font-weight: bold;
-cursor: pointer;
-list-style: none;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; color: var(--gold-dark); font-size: 26px; }
-details[open] summary::after { content: "–"; }
-.details-body { padding: 0 22px 22px; }
-.details-body ul { margin: 0 0 18px 20px; }
-.details-body li { margin-bottom: 4px; }
+    details {
+      background: var(--white);
+      border-radius: 8px;
+      margin-bottom: 14px;
+      border-left: 5px solid var(--gold);
+      overflow: hidden;
+    }
+    summary {
+      padding: 18px 22px;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--gold-dark); font-size: 26px; }
+    details[open] summary::after { content: "–"; }
+    .details-body { padding: 0 22px 22px; }
+    .details-body ul { margin: 0 0 18px 20px; }
+    .details-body li { margin-bottom: 4px; }
 
-.gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 10px;
-margin-bottom: 18px;
-}
-.photo {
-aspect-ratio: 4 / 3;
-background: #e7e1d3;
-border: 2px dashed #c4bba6;
-border-radius: 6px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--gray);
-font-size: 13px;
-overflow: hidden;
-text-align: center;
-}
-.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
 
-.materials {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-gap: 20px;
-}
-.mat-card {
-background: var(--white);
-border-radius: 8px;
-padding: 16px 16px 24px;
-text-align: center;
-border-top: 4px solid var(--gold);
-}
-.mat-photo { margin-bottom: 14px; }
-.mat-card h3 { margin-bottom: 8px; }
-.mat-card p { color: var(--gray); margin-bottom: 16px; font-size: 15px; }
+    .materials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .mat-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      border-top: 4px solid var(--gold);
+    }
+    .mat-card h3 { margin-bottom: 8px; }
+    .mat-card p { color: var(--gray); margin-bottom: 16px; font-size: 15px; }
 
-.price-group { border-left-color: var(--gold); }
-.price-group summary { color: var(--gold-dark); font-weight: 800; font-size: 20px; }
-.price-body { padding: 0 12px 16px; overflow-x: auto; }
-.price-body table { width: 100%; border-collapse: collapse; }
-.price-body th { background: var(--black); color: var(--gold); text-align: left; padding: 12px; }
-.price-body td { padding: 12px; border-bottom: 1px solid #e7e1d3; }
-.price-body td:last-child, .price-body th:last-child { white-space: nowrap; }
-.price-note {
-margin-top: 18px;
-background: var(--white);
-border-left: 5px solid var(--gold);
-border-radius: 8px;
-padding: 18px 22px;
-color: var(--graphite);
-font-size: 15px;
-}
-.price-note p { margin-bottom: 8px; }
-.price-note p:last-child { margin-bottom: 0; }
-.price-note b { color: var(--gold-dark); }
+    .contacts { background: var(--black); color: var(--white); max-width: none; }
+    .contacts .inner { max-width: 1100px; margin: 0 auto; }
+    .contact-info { text-align: center; margin-bottom: 28px; font-size: 18px; }
+    .contact-info a { color: var(--gold); text-decoration: none; }
+    form { max-width: 500px; margin: 0 auto; display: grid; gap: 14px; }
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      font-family: inherit;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #8d877a;
+      font-size: 14px;
+    }
 
-.contacts { background: var(--black); color: var(--white); max-width: none; }
-.contacts .inner { max-width: 1100px; margin: 0 auto; }
-.contact-info { text-align: center; margin-bottom: 28px; font-size: 18px; }
-.contact-info a { color: var(--gold); text-decoration: none; }
-form { max-width: 500px; margin: 0 auto; display: grid; gap: 14px; }
-input, textarea {
-padding: 12px;
-border-radius: 6px;
-border: none;
-font-size: 16px;
-font-family: inherit;
-}
-footer {
-text-align: center;
-padding: 20px;
-background: #0b0b0b;
-color: #8d877a;
-font-size: 14px;
-}
+    @media (max-width: 600px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 28px; }
+      .phone { font-size: 18px; }
+      .logo img { height: 42px; }
+          }
 
-@media (max-width: 600px) {
-.gallery { grid-template-columns: repeat(2, 1fr); }
-.hero h1 { font-size: 28px; }
-.phone { font-size: 18px; }
-.logo img { height: 42px; }
-.price-body th, .price-body td { padding: 8px 6px; font-size: 14px; }
-}
-</style>
+    /* Фото: подпись с именем файла видна, пока фото не загружено */
+    .photo {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: #e7e1d3;
+      border: 2px dashed #c4bba6;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      color: var(--gray);
+      font-size: 13px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; background: #e7e1d3; }
+    .gallery.g4 { grid-template-columns: repeat(4, 1fr); }
+    .mat-card .photo { margin-bottom: 16px; }
+
+    .hero p.fixed { font-size: 16px; font-weight: bold; color: var(--gold); margin: -10px auto 26px; }
+
+    /* Цены */
+    #price, #services, #materials { scroll-margin-top: 120px; }
+    .price-block { scroll-margin-top: 120px; }
+    .price-block summary { color: var(--gold-dark); font-size: 20px; }
+    .price-group { font-size: 15px; font-weight: bold; margin: 20px 0 6px; padding-bottom: 5px; border-bottom: 2px solid var(--gold); }
+    .price-group:first-child { margin-top: 4px; }
+    .price-table { width: 100%; border-collapse: collapse; }
+    .price-table td { padding: 9px 8px; border-bottom: 1px solid #e7e1d3; vertical-align: top; }
+    .price-table td.u { white-space: nowrap; color: var(--gray); width: 1%; }
+    .price-table td.p { white-space: nowrap; text-align: right; font-weight: bold; width: 1%; }
+    .price-note { background: var(--white); border-left: 5px solid var(--gold); border-radius: 8px; padding: 18px 22px; margin-top: 22px; }
+    .price-note p { margin-bottom: 8px; }
+    .price-note p:last-child { margin-bottom: 0; }
+    .price-note a { color: var(--gold-dark); font-weight: bold; text-decoration: none; white-space: nowrap; }
+
+    /* Просмотр фото крупно */
+    .lb { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.88); z-index: 50; align-items: center; justify-content: center; padding: 16px; cursor: zoom-out; }
+    .lb.on { display: flex; }
+    .lb img { max-width: 100%; max-height: 100%; border-radius: 6px; }
+
+    @media (max-width: 600px) {
+      .gallery, .gallery.g4 { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 28px; }
+      .phone { font-size: 18px; }
+      .logo img { height: 42px; }
+      .price-block summary { font-size: 18px; }
+      .price-table td { padding: 8px 6px; font-size: 14px; }
+      .price-note { padding: 14px 16px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<div class="top">
-<a class="logo" href="#top">
-<img src="logo.png" alt="Студия ремонта Люкслайн">
-</a>
-<a class="phone" href="tel:+79808505898">
-<small>Позвоните нам</small>
-+7 980 850-58-98
-</a>
-</div>
-<nav>
-<ul>
-<li><a href="#services">Услуги</a></li>
-<li><a href="#materials">Материалы для ремонта</a></li>
-<li><a href="#price">Цены на работы</a></li>
-<li><a href="#contacts">Контакты</a></li>
-</ul>
-</nav>
+  <div class="top">
+    <a class="logo" href="#top">
+      <img src="logo.png" alt="Студия ремонта Люкслайн">
+    </a>
+    <a class="phone" href="tel:+79808505898">
+      <small>Позвоните нам</small>
+      +7 980 850-58-98
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#materials">Материалы для ремонта</a></li>
+      <li><a href="#price">Цены на работы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="hero" id="top">
-<h1>Студия ремонта <span>Люкслайн</span></h1>
-<p>Ремонт и строительство под ключ в Усть-Катаве, Катав-Ивановске, Юрюзани, Кропачёво и окрестностях.</p>
-<p class="fixed">Фиксированная цена: стоимость закрепляется в договоре и не меняется в процессе работ.</p>
-<a class="btn" href="#contacts">Оставить заявку</a>
+  <h1>Студия ремонта <span>Люкслайн</span></h1>
+  <p>Ремонт и строительство под ключ в Усть-Катаве, Катав-Ивановске, Юрюзани, Кропачёво и окрестностях.</p>
+  <p class="fixed">Фиксированная цена: стоимость закрепляется в договоре</p>
+  <a class="btn" href="#contacts">Оставить заявку</a>
 </div>
 
 <section id="services">
-<h2>Услуги</h2>
-<p class="lead">Нажмите на нужное направление, чтобы увидеть подробности и примеры работ.</p>
+  <h2>Услуги</h2>
+  <p class="lead">Нажмите на нужное направление, чтобы увидеть подробности и примеры работ.</p>
 
-<details>
-<summary>Ремонт квартир и домов под ключ</summary>
-<div class="details-body">
-<ul>
-<li>Полный цикл: от замеров и сметы до сдачи объекта</li>
-<li>Черновая и чистовая отделка</li>
-<li>Электрика, сантехника, отопление</li>
-</ul>
-<div class="gallery"><div class="photo"><span>remont1.jpg</span></div><div class="photo"><span>remont2.jpg</span></div><div class="photo"><span>remont3.jpg</span></div><div class="photo"><span>remont4.jpg</span></div><div class="photo"><span>remont5.jpg</span></div><div class="photo"><span>remont6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Ремонт квартир и домов под ключ</summary>
+    <div class="details-body">
+      <ul>
+        <li>Полный цикл: от замеров и сметы до сдачи объекта</li>
+        <li>Черновая и чистовая отделка</li>
+        <li>Электрика, сантехника, отопление</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы remont1.jpg ... remont6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>remont1.jpg</span><img src="remont1.jpg" alt="Ремонт квартир и домов под ключ, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>remont2.jpg</span><img src="remont2.jpg" alt="Ремонт квартир и домов под ключ, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>remont3.jpg</span><img src="remont3.jpg" alt="Ремонт квартир и домов под ключ, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>remont4.jpg</span><img src="remont4.jpg" alt="Ремонт квартир и домов под ключ, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>remont5.jpg</span><img src="remont5.jpg" alt="Ремонт квартир и домов под ключ, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>remont6.jpg</span><img src="remont6.jpg" alt="Ремонт квартир и домов под ключ, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price" data-go="price">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Кровельные работы</summary>
-<div class="details-body">
-<ul>
-<li>Монтаж кровли</li>
-<li>Ремонт и перекрытие старых крыш</li>
-</ul>
-<div class="gallery"><div class="photo"><span>krovlya1.jpg</span></div><div class="photo"><span>krovlya2.jpg</span></div><div class="photo"><span>krovlya3.jpg</span></div><div class="photo"><span>krovlya4.jpg</span></div><div class="photo"><span>krovlya5.jpg</span></div><div class="photo"><span>krovlya6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Кровельные работы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж кровли</li>
+        <li>Ремонт и перекрытие старых крыш</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы krovlya1.jpg ... krovlya6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>krovlya1.jpg</span><img src="krovlya1.jpg" alt="Кровельные работы, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>krovlya2.jpg</span><img src="krovlya2.jpg" alt="Кровельные работы, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>krovlya3.jpg</span><img src="krovlya3.jpg" alt="Кровельные работы, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>krovlya4.jpg</span><img src="krovlya4.jpg" alt="Кровельные работы, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>krovlya5.jpg</span><img src="krovlya5.jpg" alt="Кровельные работы, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>krovlya6.jpg</span><img src="krovlya6.jpg" alt="Кровельные работы, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-krovlya" data-go="price-krovlya">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Каркасное строительство и постройки</summary>
-<div class="details-body">
-<ul>
-<li>Каркасные дома</li>
-<li>Беседки</li>
-<li>Бани</li>
-<li>Навесы</li>
-</ul>
-<div class="gallery"><div class="photo"><span>karkas1.jpg</span></div><div class="photo"><span>karkas2.jpg</span></div><div class="photo"><span>karkas3.jpg</span></div><div class="photo"><span>karkas4.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Каркасное строительство и постройки</summary>
+    <div class="details-body">
+      <ul>
+        <li>Каркасные дома</li>
+        <li>Беседки</li>
+        <li>Бани</li>
+        <li>Навесы</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы karkas1.jpg ... karkas4.jpg -->
+      <div class="gallery g4">
+        <div class="photo"><span>karkas1.jpg</span><img src="karkas1.jpg" alt="Каркасное строительство и постройки, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>karkas2.jpg</span><img src="karkas2.jpg" alt="Каркасное строительство и постройки, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>karkas3.jpg</span><img src="karkas3.jpg" alt="Каркасное строительство и постройки, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>karkas4.jpg</span><img src="karkas4.jpg" alt="Каркасное строительство и постройки, фото 4" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price" data-go="price">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Отделочные работы</summary>
-<div class="details-body">
-<ul>
-<li>Подготовка стен и полов</li>
-<li>Шпаклёвка</li>
-<li>Монтаж гипсокартона</li>
-<li>Плиточные работы</li>
-<li>Покраска и поклейка обоев</li>
-<li>Стяжка пола</li>
-<li>Укладка ламината и линолеума</li>
-<li>Установка дверей</li>
-</ul>
-<div class="gallery"><div class="photo"><img src>otdelka1.jpg<img></div><div class="photo"><span>otdelka2.jpg</span></div><div class="photo"><span>otdelka3.jpg</span></div><div class="photo"><span>otdelka4.jpg</span></div><div class="photo"><span>otdelka5.jpg</span></div><div class="photo"><span>otdelka6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Отделочные работы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Подготовка стен и полов</li>
+        <li>Шпаклёвка</li>
+        <li>Монтаж гипсокартона</li>
+        <li>Плиточные работы</li>
+        <li>Покраска и поклейка обоев</li>
+        <li>Стяжка пола</li>
+        <li>Укладка ламината и линолеума</li>
+        <li>Установка дверей</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы otdelka1.jpg ... otdelka6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>otdelka1.jpg</span><img src="otdelka1.jpg" alt="Отделочные работы, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otdelka2.jpg</span><img src="otdelka2.jpg" alt="Отделочные работы, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otdelka3.jpg</span><img src="otdelka3.jpg" alt="Отделочные работы, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otdelka4.jpg</span><img src="otdelka4.jpg" alt="Отделочные работы, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otdelka5.jpg</span><img src="otdelka5.jpg" alt="Отделочные работы, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otdelka6.jpg</span><img src="otdelka6.jpg" alt="Отделочные работы, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-otdelka" data-go="price-otdelka">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Отделка фасадов</summary>
-<div class="details-body">
-<ul>
-<li>Сайдинг</li>
-<li>Термопанели</li>
-<li>Штукатурка фасадов</li>
-<li>Покраска фасадов</li>
-</ul>
-<div class="gallery"><div class="photo"><span>fasad1.jpg</span></div><div class="photo"><span>fasad2.jpg</span></div><div class="photo"><span>fasad3.jpg</span></div><div class="photo"><span>fasad4.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Отделка фасадов</summary>
+    <div class="details-body">
+      <ul>
+        <li>Сайдинг</li>
+        <li>Термопанели</li>
+        <li>Штукатурка фасадов</li>
+        <li>Покраска фасадов</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы fasad1.jpg ... fasad4.jpg -->
+      <div class="gallery g4">
+        <div class="photo"><span>fasad1.jpg</span><img src="fasad1.jpg" alt="Отделка фасадов, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>fasad2.jpg</span><img src="fasad2.jpg" alt="Отделка фасадов, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>fasad3.jpg</span><img src="fasad3.jpg" alt="Отделка фасадов, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>fasad4.jpg</span><img src="fasad4.jpg" alt="Отделка фасадов, фото 4" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-fasad" data-go="price-fasad">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Заборы</summary>
-<div class="details-body">
-<ul>
-<li>Из сетки-рабицы</li>
-<li>Из профлиста</li>
-<li>Деревянные</li>
-<li>Из евроштакетника</li>
-<li>Ворота и калитки</li>
-</ul>
-<div class="gallery"><div class="photo"><span>zabor1.jpg</span></div><div class="photo"><span>zabor2.jpg</span></div><div class="photo"><span>zabor3.jpg</span></div><div class="photo"><span>zabor4.jpg</span></div><div class="photo"><span>zabor5.jpg</span></div><div class="photo"><span>zabor6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Заборы</summary>
+    <div class="details-body">
+      <ul>
+        <li>Из сетки-рабицы</li>
+        <li>Из профлиста</li>
+        <li>Деревянные</li>
+        <li>Из евроштакетника</li>
+        <li>Ворота и калитки</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы zabor1.jpg ... zabor6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>zabor1.jpg</span><img src="zabor1.jpg" alt="Заборы, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>zabor2.jpg</span><img src="zabor2.jpg" alt="Заборы, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>zabor3.jpg</span><img src="zabor3.jpg" alt="Заборы, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>zabor4.jpg</span><img src="zabor4.jpg" alt="Заборы, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>zabor5.jpg</span><img src="zabor5.jpg" alt="Заборы, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>zabor6.jpg</span><img src="zabor6.jpg" alt="Заборы, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-zabor" data-go="price-zabor">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Электрика</summary>
-<div class="details-body">
-<ul>
-<li>Прокладка и замена электропроводки</li>
-<li>Установка розеток, выключателей и электрощитков</li>
-</ul>
-<div class="gallery"><div class="photo"><span>elektrika1.jpg</span></div><div class="photo"><span>elektrika2.jpg</span></div><div class="photo"><span>elektrika3.jpg</span></div><div class="photo"><span>elektrika4.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Электрика</summary>
+    <div class="details-body">
+      <ul>
+        <li>Прокладка и замена электропроводки</li>
+        <li>Установка розеток, выключателей и электрощитков</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы elektrika1.jpg ... elektrika4.jpg -->
+      <div class="gallery g4">
+        <div class="photo"><span>elektrika1.jpg</span><img src="elektrika1.jpg" alt="Электрика, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>elektrika2.jpg</span><img src="elektrika2.jpg" alt="Электрика, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>elektrika3.jpg</span><img src="elektrika3.jpg" alt="Электрика, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>elektrika4.jpg</span><img src="elektrika4.jpg" alt="Электрика, фото 4" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-elektrika" data-go="price-elektrika">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Сантехника</summary>
-<div class="details-body">
-<ul>
-<li>Монтаж водопровода и канализации</li>
-<li>Установка ванн и душевых кабин</li>
-<li>Установка унитазов и раковин</li>
-<li>Установка смесителей</li>
-<li>Подключение стиральной и посудомоечной машин</li>
-<li>Замена и ремонт сантехнических узлов</li>
-</ul>
-<div class="gallery"><div class="photo"><span>santehnika1.jpg</span></div><div class="photo"><span>santehnika2.jpg</span></div><div class="photo"><span>santehnika3.jpg</span></div><div class="photo"><span>santehnika4.jpg</span></div><div class="photo"><span>santehnika5.jpg</span></div><div class="photo"><span>santehnika6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Сантехника</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж водопровода</li>
+        <li>Монтаж канализации</li>
+        <li>Установка ванн и душевых кабин</li>
+        <li>Установка унитазов и раковин</li>
+        <li>Установка смесителей</li>
+        <li>Подключение стиральной и посудомоечной машин</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы santehnika1.jpg ... santehnika6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>santehnika1.jpg</span><img src="santehnika1.jpg" alt="Сантехника, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>santehnika2.jpg</span><img src="santehnika2.jpg" alt="Сантехника, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>santehnika3.jpg</span><img src="santehnika3.jpg" alt="Сантехника, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>santehnika4.jpg</span><img src="santehnika4.jpg" alt="Сантехника, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>santehnika5.jpg</span><img src="santehnika5.jpg" alt="Сантехника, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>santehnika6.jpg</span><img src="santehnika6.jpg" alt="Сантехника, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-santehnika" data-go="price-santehnika">Узнать цену</a>
+    </div>
+  </details>
 
-<details>
-<summary>Отопление</summary>
-<div class="details-body">
-<ul>
-<li>Монтаж радиаторов</li>
-<li>Монтаж тёплых полов</li>
-<li>Монтаж и подключение котлов</li>
-<li>Трубная разводка</li>
-<li>Установка циркуляционных насосов</li>
-<li>Промывка системы отопления</li>
-</ul>
-<div class="gallery"><div class="photo"><span>otoplenie1.jpg</span></div><div class="photo"><span>otoplenie2.jpg</span></div><div class="photo"><span>otoplenie3.jpg</span></div><div class="photo"><span>otoplenie4.jpg</span></div><div class="photo"><span>otoplenie5.jpg</span></div><div class="photo"><span>otoplenie6.jpg</span></div></div>
-<a class="btn btn-outline" href="#price">Узнать цену</a>
-</div>
-</details>
+  <details>
+    <summary>Отопление</summary>
+    <div class="details-body">
+      <ul>
+        <li>Монтаж радиаторов</li>
+        <li>Монтаж тёплых полов</li>
+        <li>Монтаж котлов</li>
+        <li>Монтаж трубной разводки</li>
+        <li>Установка циркуляционных насосов</li>
+        <li>Промывка системы отопления</li>
+      </ul>
+      <!-- Фото: загрузи в репозиторий файлы otoplenie1.jpg ... otoplenie6.jpg -->
+      <div class="gallery">
+        <div class="photo"><span>otoplenie1.jpg</span><img src="otoplenie1.jpg" alt="Отопление, фото 1" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otoplenie2.jpg</span><img src="otoplenie2.jpg" alt="Отопление, фото 2" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otoplenie3.jpg</span><img src="otoplenie3.jpg" alt="Отопление, фото 3" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otoplenie4.jpg</span><img src="otoplenie4.jpg" alt="Отопление, фото 4" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otoplenie5.jpg</span><img src="otoplenie5.jpg" alt="Отопление, фото 5" loading="lazy" onerror="this.remove()"></div><div class="photo"><span>otoplenie6.jpg</span><img src="otoplenie6.jpg" alt="Отопление, фото 6" loading="lazy" onerror="this.remove()"></div>
+      </div>
+      <a class="btn btn-outline" href="#price-otoplenie" data-go="price-otoplenie">Узнать цену</a>
+    </div>
+  </details>
 
 </section>
 
 <section id="materials">
-<h2>Материалы для ремонта</h2>
-<p class="lead">Цены на материалы меняются, поэтому актуальную стоимость уточняйте по телефону.</p>
-<div class="materials">
-<div class="mat-card">
-<div class="photo mat-photo"><span>okna.jpg</span></div>
-<h3>Пластиковые окна</h3>
-<p>Цену уточняйте по телефону</p>
-<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-</div>
-<div class="mat-card">
-<div class="photo mat-photo"><span>uteplitel.jpg</span></div>
-<h3>Утеплитель</h3>
-<p>Цену уточняйте по телефону</p>
-<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-</div>
-<div class="mat-card">
-<div class="photo mat-photo"><span>osb.jpg</span></div>
-<h3>ОСБ-плита</h3>
-<p>Цену уточняйте по телефону</p>
-<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-</div>
-<div class="mat-card">
-<div class="photo mat-photo"><span>dveri.jpg</span></div>
-<h3>Двери</h3>
-<p>Цену уточняйте по телефону</p>
-<a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
-</div>
-</div>
+  <h2>Материалы для ремонта</h2>
+  <p class="lead">Цены на материалы меняются, поэтому актуальную стоимость уточняйте по телефону.</p>
+  <div class="materials">
+    <div class="mat-card">
+      <!-- Фото: загрузи файл okna.jpg -->
+      <div class="photo"><span>okna.jpg</span><img src="okna.jpg" alt="Пластиковые окна" loading="lazy" onerror="this.remove()"></div>
+      <h3>Пластиковые окна</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <!-- Фото: загрузи файл uteplitel.jpg -->
+      <div class="photo"><span>uteplitel.jpg</span><img src="uteplitel.jpg" alt="Утеплитель" loading="lazy" onerror="this.remove()"></div>
+      <h3>Утеплитель</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <!-- Фото: загрузи файл osb.jpg -->
+      <div class="photo"><span>osb.jpg</span><img src="osb.jpg" alt="ОСБ-плита" loading="lazy" onerror="this.remove()"></div>
+      <h3>ОСБ-плита</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+    <div class="mat-card">
+      <!-- Фото: загрузи файл dveri.jpg -->
+      <div class="photo"><span>dveri.jpg</span><img src="dveri.jpg" alt="Двери" loading="lazy" onerror="this.remove()"></div>
+      <h3>Двери</h3>
+      <p>Цену уточняйте по телефону</p>
+      <a class="btn btn-outline" href="tel:+79808505898">Позвонить</a>
+    </div>
+  </div>
 </section>
 
 <section id="price">
-<h2>Цены на работы</h2>
-<p class="lead">Нажмите на раздел, чтобы увидеть расценки.</p>
-
-<details class="price-group">
-<summary>Отделочные работы</summary>
-<div class="price-body">
-<table>
-<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
-<tr><td>Штукатурные работы по маякам до 30мм</td><td>м²</td><td>от 680</td></tr>
-<tr><td>Штукатурные работы по маякам более 30мм</td><td>м²</td><td>от 860</td></tr>
-<tr><td>Штукатурные работы откосы</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Штукатурные работы изогнутые поверхности</td><td>м²</td><td>от 1260</td></tr>
-<tr><td>Штукатурная сетка</td><td>м²</td><td>от 220</td></tr>
-<tr><td>Штукатурные работы потолки по маякам до 30мм</td><td>м²</td><td>от 1260</td></tr>
-<tr><td>Штукатурные работы потолки по маякам более 30мм</td><td>м²</td><td>от 1400</td></tr>
-<tr><td>Грунтовка стен</td><td>м²</td><td>от 70</td></tr>
-<tr><td>Грунтовка потолков</td><td>м²</td><td>от 110</td></tr>
-<tr><td>Стеклохолст</td><td>м²</td><td>от 340</td></tr>
-<tr><td>Шпаклёвка швы ГКЛ</td><td>пог. м</td><td>от 180</td></tr>
-<tr><td>Перфорированный угол</td><td>пог. м</td><td>от 220</td></tr>
-<tr><td>Шпаклёвка под обои</td><td>м²</td><td>от 400</td></tr>
-<tr><td>Шпаклёвка под покраску</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Шпаклёвка потолок под покраску</td><td>м²</td><td>от 1080</td></tr>
-<tr><td>Шпаклёвка откосы под покраску</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Шлифовка стен</td><td>м²</td><td>от 220</td></tr>
-<tr><td>Шлифовка потолка</td><td>м²</td><td>от 290</td></tr>
-<tr><td>Покраска стен 2 слоя</td><td>м²</td><td>от 360</td></tr>
-<tr><td>Покраска потолка</td><td>м²</td><td>от 450</td></tr>
-<tr><td>Монтаж ГКЛ на стену 1 слой</td><td>м²</td><td>от 720</td></tr>
-<tr><td>Монтаж ГКЛ на стену 2 слоя</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Монтаж ГКЛ перегородки 1 слой</td><td>м²</td><td>от 1170</td></tr>
-<tr><td>Монтаж ГКЛ перегородки 2 слоя</td><td>м²</td><td>от 1350</td></tr>
-<tr><td>ГКЛ фрезеровка</td><td>пог. м</td><td>от 180</td></tr>
-<tr><td>Монтаж ГКЛ на клей</td><td>м²</td><td>от 540</td></tr>
-<tr><td>Потолок ГКЛ 1 уровень</td><td>м²</td><td>от 1260</td></tr>
-<tr><td>Потолок ГКЛ 2 уровня</td><td>м²</td><td>от 1620</td></tr>
-<tr><td>Откосы ГКЛ</td><td>м²</td><td>от 810</td></tr>
-<tr><td>Прямая укладка керамической плитки</td><td>м²</td><td>от 2070</td></tr>
-<tr><td>Прямая укладка керамогранита до 60 см включительно</td><td>м²</td><td>от 2520</td></tr>
-<tr><td>Прямая укладка керамогранита (свыше 60 см и до 120 см включительно)</td><td>м²</td><td>от 3150</td></tr>
-<tr><td>Укладка мозаики</td><td>м²</td><td>от 4050</td></tr>
-<tr><td>Устройство цементной затирки в межплиточных швах</td><td>м²</td><td>от 180</td></tr>
-<tr><td>Устройство двухкомпонентной затирки в межплиточных швах</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Поклейка обоев бумажных</td><td>м²</td><td>от 340</td></tr>
-<tr><td>Поклейка обоев виниловых/флизелиновых</td><td>м²</td><td>от 360</td></tr>
-<tr><td>Наливной пол</td><td>м²</td><td>от 450</td></tr>
-<tr><td>Цементно-песчаная стяжка до 50мм</td><td>м²</td><td>от 720</td></tr>
-<tr><td>Цементно-песчаная стяжка более 50мм</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Армирующая сетка</td><td>м²</td><td>от 180</td></tr>
-<tr><td>Укладка ламината</td><td>м²</td><td>от 480</td></tr>
-<tr><td>Укладка линолеума</td><td>м²</td><td>от 360</td></tr>
-<tr><td>Установка двери</td><td>шт.</td><td>от 4050</td></tr>
-</table>
-</div>
-</details>
-
-<details class="price-group">
-<summary>Фасады</summary>
-<div class="price-body">
-<table>
-<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
-<tr><td>Монтаж сайдинга</td><td>м²</td><td>от 900</td></tr>
-<tr><td>Монтаж термопанелей</td><td>м²</td><td>от 610</td></tr>
-<tr><td>Штукатурка фасада</td><td>м²</td><td>от 450</td></tr>
-<tr><td>Покраска фасада</td><td>м²</td><td>от 360</td></tr>
-</table>
-</div>
-</details>
-
-<details class="price-group">
-<summary>Заборы</summary>
-<div class="price-body">
-<table>
-<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
-<tr><td>Забор из сетки-рабицы</td><td>пог. м</td><td>от 400</td></tr>
-<tr><td>Забор из профлиста</td><td>пог. м</td><td>от 1080</td></tr>
-<tr><td>Деревянный забор</td><td>пог. м</td><td>от 630</td></tr>
-<tr><td>Забор из евроштакетника</td><td>пог. м</td><td>от 580</td></tr>
-<tr><td>Ворота и калитка</td><td>шт.</td><td>от 3600</td></tr>
-</table>
-</div>
-</details>
-
-<details class="price-group">
-<summary>Инженерные работы</summary>
-<div class="price-body">
-<table>
-<tr><th>Вид работ</th><th>Ед.</th><th>Цена, ₽</th></tr>
-<tr><td>Электрика: точка (розетка, выключатель)</td><td>шт.</td><td>по запросу</td></tr>
-<tr><td>Сантехника: установка прибора</td><td>шт.</td><td>по запросу</td></tr>
-<tr><td>Монтаж радиатора отопления</td><td>шт.</td><td>по запросу</td></tr>
-</table>
-</div>
-</details>
-
-<div class="price-note">
-<p><b>Указаны цены эконом-варианта.</b> Работаем в трёх вариантах: эконом, стандарт и премиум. Итоговая цена зависит от выбранного варианта, объёма и сложности работ.</p>
-<p><b>Фиксированная цена.</b> Стоимость закрепляется в договоре и не меняется в процессе выполнения заказа.</p>
-<p>Расчёт и консультация: <a href="tel:+79808505898" style="color:var(--gold-dark);font-weight:bold;text-decoration:none">+7 980 850-58-98</a></p>
-</div>
+  <h2>Цены на работы</h2>
+  <p class="lead">Нажмите на нужный раздел, чтобы увидеть расценки.</p>
+  <div id="price-blocks"></div>
+  <noscript><p class="lead">Чтобы увидеть расценки, включите JavaScript в браузере или позвоните нам: <a href="tel:+79808505898">+7 980 850-58-98</a>.</p></noscript>
+  <div class="price-note">
+    <p><strong>Цены указаны для варианта «Эконом».</strong> Работаем в трёх вариантах: <strong>Эконом</strong>, <strong>Стандарт</strong> и <strong>Премиум</strong>. Итоговая стоимость зависит от выбранного уровня.</p>
+    <p><strong>Фиксированная цена:</strong> стоимость работ закрепляется в договоре и не меняется в процессе выполнения заказа.</p>
+    <p>Точный расчёт по телефону: <a href="tel:+79808505898">+7 980 850-58-98</a>.</p>
+  </div>
 </section>
 
 <section id="contacts" class="contacts">
-<div class="inner">
-<h2>Контакты</h2>
-<div class="contact-info">
-<p>Телефон: <a href="tel:+79808505898">+7 980 850-58-98</a></p>
-<p>Почта: <a href="mailto:edolfs@mail.ru">edolfs@mail.ru</a></p>
-<p>Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво и окрестности</p>
-</div>
-<form action="mailto:edolfs@mail.ru" method="post" enctype="text/plain">
-<input type="text" name="name" placeholder="Ваше имя" required>
-<input type="tel" name="phone" placeholder="Телефон" required>
-<textarea name="message" rows="4" placeholder="Что нужно сделать?"></textarea>
-<button class="btn" type="submit">Отправить заявку</button>
-</form>
-</div>
+  <div class="inner">
+    <h2>Контакты</h2>
+    <div class="contact-info">
+      <p>Телефон: <a href="tel:+79808505898">+7 980 850-58-98</a></p>
+      <p>Почта: <a href="mailto:edolfs@mail.ru">edolfs@mail.ru</a></p>
+      <p>Усть-Катав, Катав-Ивановск, Юрюзань, Кропачёво и окрестности</p>
+    </div>
+    <form action="mailto:edolfs@mail.ru" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <textarea name="message" rows="4" placeholder="Что нужно сделать?"></textarea>
+      <button class="btn" type="submit">Отправить заявку</button>
+    </form>
+  </div>
 </section>
-
 <footer>© 2026 Студия ремонта Люкслайн. Все права защищены.</footer>
+<!--
+  ========================  КАК МЕНЯТЬ ЦЕНЫ  ========================
+  Все расценки лежат в блоке <script id="price-data"> ниже. Одна строка = одна работа:
 
+      Название работы | единица | цена
+
+  * Цена в строке — ИСХОДНАЯ. На сайте она показывается со скидкой DISCOUNT (в процентах)
+    и словом «от», округлённая до ROUND_TO рублей. Хочешь поменять цену — меняй только число.
+  * Скидку для ВСЕХ цен сразу меняют одной цифрой DISCOUNT (0 — показывать цены как в списке).
+  * Чтобы одна цена показывалась ровно как написана, без скидки, поставь «=» перед числом:  = 680
+  * Вместо числа можно написать текст, например: по договорённости
+  * Строка, которая начинается с  #   — раздел (сворачиваемый блок).  Формат:  # Название | id
+  * Строка, которая начинается с  ##  — заголовок группы внутри раздела.
+  * Чтобы убрать работу — удали её строку. Чтобы добавить — скопируй любую строку и поменяй.
+  Не трогай знак «|» и порядок «название | единица | цена».
+  ===================================================================
+-->
+<script>
+var DISCOUNT = 10;       // скидка на цены из списка, % (0 — без скидки)
+var PREFIX = "от ";      // слово перед ценой
+var ROUND_TO = 5;        // округлять цену до ... рублей
+var OPEN_FIRST = false;  // true — первый раздел цен раскрыт сразу
+</script>
+<script type="text/plain" id="price-data">
+# Кровельные работы | krovlya
+## Кровельные покрытия
+Монтаж металлочерепицы | м² | 550
+Монтаж натуральной черепицы (керамической, цементно-песчаной) | м² | 630
+Монтаж профлиста | м² | 450
+Монтаж ондулина | м² | 700
+Монтаж гибкой (битумной) черепицы | м² | 560
+Монтаж медной кровли | м² | 2450
+Монтаж наплавляемой кровли в 1 слой | м² | 290
+Монтаж мембранной кровли | м² | 300
+Монтаж фальцевой кровли на одинарный фалец | м² | 950
+Монтаж рулонной кровли на двойной фалец | м² | 1200
+Фальцевая кровля из картин на двойной фалец | м² | 690
+## Основание кровли
+Грунтовка битумным праймером | м² | 195
+Устройство разуклонки керамзитом | м³ | 1290
+Устройство выравнивающей стяжки из ЦПР 10-20 мм | м² | 1050
+Устройство выравнивающей стяжки из ЦПР 30-50 мм | м² | 1150
+Устройство основания кровли из асбестоцементных листов в 2 слоя 20 мм | м² | 550
+Монтаж подкладочного ковра | м² | 250
+## Обрешётка, изоляция, утепление
+Монтаж обрешетки | м² | 350
+Монтаж дополнительной обрешетки (OSB, Фанера) | м² | 360
+Черновая подшивка потолка | м² | 300
+Монтаж контробрешетки | м² | 350
+Устройство гидроизоляции | м² | 390
+Укладка утеплителя (ROCKVOOL) до 150 мм | м² | 250
+Укладка утеплителя (ROCKVOOL) от 150 мм | м² | 350
+Монтаж подкровельной мембраны | м² | 250
+Устройство пароизоляции | м² | 250
+## Стропильная система
+Монтаж мауэрлата | п. м | 800
+Монтаж стропильной системы | м² | 950
+Антисептирование деревянных конструкций готовым составом | м³ | 2900
+## Элементы кровли и примыкания
+Монтаж конька | п. м | 600
+Устройство конькового аэратора (врезка в готовую кровлю) | п. м | 850
+Монтаж готового конькового аэратора | п. м | 650
+Устройство пристенного аэратора | п. м | 800
+Установка аэратора (KTV) | шт. | 1430
+Устройство ендовы | п. м | 750
+Монтаж накладки ендовы | п. м | 750
+Монтаж фронтонных планок | п. м | 550
+Монтаж карнизных планок | п. м | 550
+Устройство примыканий к стенам | п. м | 660
+Изготовление и монтаж покрытий парапетов | п. м | 850
+Установка подоконного отлива | п. м | 450
+Установка колпака на дымоходную трубу/вент. шахту | шт. | 3500
+Врезка вент./канализационной проходки/вывод антенны | шт. | 4800
+Установка колпака на башню | шт. | 9800
+Установка флюгера | шт. | 3500
+Облицовка поверхности дымохода сталью с полимерным покрытием | м² | 9800
+Установка мансардного окна | шт. | 9850
+Врезка мансардного окно в готовую кровлю | шт. | 6500
+Монтаж ветровой планки | п. м | 550
+Подшивка карнизных свесов и фронтонных выносов соффитом | п. м | 920
+Монтаж лобовой доски, каркаса и обрешетки свесов кровли | п. м | 900
+## Водостоки, снегозадержатели, ограждения
+Монтаж водосточных желобов | п. м | 870
+Монтаж водосточных труб | п. м | 870
+Монтаж снегозадержателей | п. м | 950
+Монтаж кровельных ограждений | п. м | 1650
+Монтаж кровельных ковриков | п. м | 1650
+Монтаж кровельных лестниц | п. м | 1650
+## Демонтаж
+Демонтаж стропильной системы | м² | 250
+Демонтаж обрешетки | м² | 190
+Демонтаж кровельного покрытия (кроме дранки) | м² | 200
+Демонтаж гидроизоляции | м² | 175
+Демонтаж утеплителя | м² | 300
+Демонтаж черновой подшивки потолка | м² | 200
+Демонтаж водосточных и декоративных фартуков | п. м | 150
+Демонтаж черепицы по карнизному свесу | п. м | 150
+Демонтаж водосточного желоба | п. м | 320
+Демонтаж водосточных труб | п. м | 250
+## Выезд, вывоз мусора, леса, бытовка
+Выезд на объект для обследования кровли, составление акта | выезд | 5000
+Уборка, вынос и загрузка мусора | контейнер | 12000
+Контейнер под мусор 27 м³ | контейнер | 26000
+Замеры (выезд до 50 км) | выезд | 4000
+Устройство лесов (расчет по площади фасада) | м² | 200
+Доставка бытовки | услуга | 18000
+Аренда бытовки | месяц | 6000
+
+# Отделочные работы | otdelka
+## Штукатурка
+Штукатурные работы по маякам до 30 мм | м² | 750
+Штукатурные работы по маякам более 30 мм | м² | 950
+Штукатурные работы откосы | м² | 1000
+Штукатурные работы изогнутые поверхности | м² | 1400
+Штукатурная сетка | м² | 250
+Штукатурные работы потолки по маякам до 30 мм | м² | 1400
+Штукатурные работы потолки по маякам более 30 мм | м² | 1550
+## Грунтовка и стеклохолст
+Грунтовка стен | м² | 80
+Грунтовка потолков | м² | 120
+Стеклохолст | м² | 380
+## Шпаклёвка и шлифовка
+Шпаклёвка швы ГКЛ | п. м | 200
+Перфорированный угол | п. м | 250
+Шпаклёвка под обои | м² | 450
+Шпаклёвка под покраску | м² | 1000
+Шпаклёвка потолок под покраску | м² | 1200
+Шпаклёвка откосы под покраску | м² | 1000
+Шлифовка стен | м² | 250
+Шлифовка потолка | м² | 320
+## Покраска
+Покраска стен 2 слоя | м² | 400
+Покраска потолка | м² | 500
+## Гипсокартон
+Монтаж ГКЛ на стену 1 слой | м² | 800
+Монтаж ГКЛ на стену 2 слоя | м² | 1000
+Монтаж ГКЛ перегородки 1 слой | м² | 1300
+Монтаж ГКЛ перегородки 2 слоя | м² | 1500
+ГКЛ фрезеровка | п. м | 200
+Монтаж ГКЛ на клей | м² | 600
+Потолок ГКЛ 1 уровень | м² | 1400
+Потолок ГКЛ 2 уровня | м² | 1800
+Откосы ГКЛ | м² | 900
+## Плитка и мозаика
+Прямая укладка керамической плитки | м² | 2300
+Прямая укладка керамогранита до 60 см включительно | м² | 2800
+Прямая укладка керамогранита (свыше 60 см и до 120 см включительно) | м² | 3500
+Укладка мозаики | м² | 4500
+Устройство цементной затирки в межплиточных швах | м² | 200
+Устройство двухкомпонентной затирки в межплиточных швах | м² | 1000
+## Обои
+Поклейка обоев бумажных | м² | 380
+Поклейка обоев виниловые/флизелиновые | м² | 400
+## Полы
+Наливной пол | м² | 500
+Цементно-песчаная стяжка до 50 мм | м² | 800
+Цементно-песчаная стяжка более 50 мм | м² | 1000
+Армирующая сетка | м² | 200
+Укладка ламината | м² | 530
+Укладка линолеума | м² | 400
+## Двери
+Установка двери | шт. | 4500
+
+# Потолки | potolki
+## Потолки: ГКЛ, реечные, «Армстронг»
+Устройство одноуровневого потолка из ГКЛ на металлическом каркасе в прямоугольном помещении от 5 м² | м² | 1170
+Устройство одноуровневого потолка из ГКЛ на металлическом каркасе в многоугольном помещении от 5 м² | м² | 1630
+Устройство одноуровневого потолка из ГКЛ на металлическом каркасе в помещении с радиусом от 5 м² | м² | 1760
+Устройство разноуровневого потолка | м² | 2080
+Устройство радиусного разноуровневого потолка | м² | 3700
+Устройство одноуровневого металлокаркаса | м² | 780
+Облицовка каркаса ГКЛ | м² | 390
+Устройство потолка реечного алюминиевого до 5 м² | шт. | 6760
+Устройство потолка реечного алюминиевого от 5 м² | м² | 1040
+Устройство подвесного потолка типа «Армстронг»при высоте до 3,0 м | м² | 910
+Устройство подвесного потолка типа "Грильято" 100х100 при высоте до 3,0 м | м² | 910
+Устройство подвесного потолка типа "Грильято" 50х50 при высоте до 3,0 м | м² | 1300
+Монтаж потолочных светильников | шт. | 520
+Монтаж потолочных диффузоров | шт. | 650
+## Короба
+Устройство короба из ГКЛ на металлокаркасе шириной до 350 мм (Г-образных) | п. м | 1300
+Устройство короба из ГКЛ на металлокаркасе шириной от 350 мм (Г-образных) | п. м | 1560
+Устройство короба из ГКЛ на металлокаркасе шириной от 350 мм (П-образных) | п. м | 1560
+Устройство короба из ГКЛ на металлокаркасе шириной до 500 мм (П-образных) | п. м | 1950
+Устройство фигурных коробов из ГКЛ на металлическом каркасе шириной до 500 мм | п. м | 2210
+Устройство фигурных коробов из ГКЛ на металлическом каркасе шириной от 500 мм | п. м | 2600
+Устройство карниза из ГКЛ для подсветки шириной до 350 мм | п. м | 2210
+Устройство карниза из ГКЛ для подсветки шириной от 350 мм | п. м | 2600
+Устройство ниши под карниз | п. м | 1950
+Устройство коробов из ГКЛ на дер. каркасе (V- образный) | п. м | 2800
+Устройство радиусного кессона в ГКЛ потолке | м² | 2500
+Устройство кессона в ГКЛ потолке | м² | 5600
+Устройство радиусного элемента | п. м | 2800
+## Тепло-звукоизоляция
+Устройство теплозвукоизоляции потолка пеноплексом | м² | 520
+Устройство теплозвукоизоляции потолка минеральной ватой | м² | 450
+Монтаж пароизоляционной пленки | м² | 220
+## Штукатурные работы
+Оштукатуривание потолков раствором из гипсовых смесей со средней толщиной слоя до 40 мм | м² | 780
+Монтаж металлической армирующей сетки | м² | 390
+Выравнивание бетонного потолка при высоте до 3,0 м | м² | 1170
+Выравнивание бетонного потолка при высоте от 3,0 м | м³ | 1520
+Оштукатуривание балок по сетке | п. м | 1365
+Оштукатуривание по маякам | м² | 1170
+## Шпаклёвка потолков
+Наклейка стеклоткани на потолок под шпаклёвку | м² | 455
+Шпаклёвка бетонного потолка при высоте до 3,0 м | м² | 585
+Шпаклёвка бетонного потолка при высоте от 3,0 м | м² | 760
+Частичное выравнивание потолка | м² | 780
+## Шпаклёвка коробов и карнизов
+Шпаклёвка и грунтовка короба из ГКЛ | п. м | 585
+Шпаклёвка и грунтовка карнизов из ГКЛ | п. м | 845
+Шпаклёвка радиусного элемента (тип короб) | п. м | 1270
+## Малярные работы (потолки ГКЛ)
+Грунтовка потолка при высоте до 3,0 м | м² | 100
+Оклейка потолка флизелином | м² | 455
+Покраска потолка в 2 слоя | м² | 520
+Оклейка потолочной плиткой | м² | 1170
+Шпаклёвка, грунтовка, поклейка и покраска сложного потолка из ГКЛ | м² | 4200
+## Стыки, русты, штробы
+Ремонт стыков перекрытий и стен | п. м | 510
+Расшивка и заделка рустов | п. м | 325
+Расшивка, проклейка и шпаклевка швов | п. м | 510
+Обработка примыканий герметиком | п. м | 200
+## Обои на потолок
+Оклейка потолка флизелином, обоями при высоте до 3,0 м | м² | 455
+Оклейка потолка флизелином, обоями при высоте от 3,0 м | м² | 590
+Оклейка потолка обоями под окраску при высоте до 3,0 м | м² | 455
+Оклейка потолка обоями под окраску при высоте от 3,0 м | м² | 590
+## Грунтовка и покраска
+Грунтовка потолка при высоте от 3,0 | м² | 130
+Покраска потолка ВД красками за 2 раза при высоте до 3,0 м | м² | 520
+Покраска потолка ВД красками за 2 раза при высоте от 3,0 м | м² | 680
+## Лепнина и декоративные профили
+Монтаж и покраска молдинга | п. м | 390
+Монтаж и покраска потолочной галтели до 50 мм при высоте до 3,0 м | п. м | 715
+Монтаж и покраска потолочной галтели от 50 мм до 100 мм при высоте до 3,0 м | п. м | 850
+Монтаж и покраска потолочной галтели от 100 мм до 200 мм при высоте до 3,0 м | п. м | 1050
+Монтаж и покраска потолочного карниза от 100 мм до 200 мм при высоте до 3,0 м | п. м | 1050
+Монтаж и покраска декора под люстру | шт. | 1600
+Монтаж полиуретановых балок | п. м | 1300
+## Подготовительные работы
+Подготовительные работы по защите поверхностей | м² | 100
+Размывка потолка | м² | 390
+Размывка потолка при высоте от 3 м | м² | 500
+Снятие обоев | м² | 325
+Сбивка штукатурки и очистка потолка от дранки | м² | 945
+## Демонтаж
+Демонтаж гипсовых галтелей | п. м | 230
+Демонтаж пластиковых галтелей | п. м | 65
+Демонтаж подвесного алюминиевого потолка | м² | 280
+Демонтаж подвесного пластикового потолка | м² | 280
+Демонтаж подвесного потолка «Армстронг» | м² | 280
+Демонтаж подвесного потолка из ГКЛ на металлокаркасе | м² | 390
+Демонтаж ГКЛ с металлокаркаса | м² | 300
+
+# Полы | poly
+## Основные работы
+Устройство деформационных швов | п. м | 950
+Устройство термошвов из пенопласта | п. м | 700
+Настил вспененного полиэтилена и плёнки с проклейкой швов скотчем | м² | 150
+Устройство слоя теплоизоляции из керамзита до 10 см | м² | 260
+Устройство слоя теплоизоляции из пенополистирола | м² | 450
+Укладка арматурной сетки(армирование стяжки) | м² | 260
+Устройство арматурной сетки из прутка (1 плоскость) | м² | 520
+Монтаж маяков под цементно-песчаную стяжку | м² | 260
+Устройство цементно-песчаной стяжки до 20 мм | м² | 650
+Устройство полусухой цементной стяжки до 50 мм | м² | 910
+Устройство цементно-песчаной стяжки более 70 мм | м² | 1170
+Грунтовка стяжки | м² | 100
+Заливка пола самовыравнивающимся раствором | м² | 650
+Финишное выравнивание пола | м² | 520
+Приготовление цементно-песчаного раствора | м³ | 4685
+Укладка раствора в ручную | м³ | 4800
+Укладка бетона в опалубку | м³ | 2670
+Устройство бетонного буртика | п. м | 4500
+Устройство бортика из кирпича | п. м | 3300
+Устройство душевого поддона | м² | 4900
+Устройство постамента под поддон | м² | 4900
+Монтаж бетонного порожка | п. м | 4500
+## Гидроизоляция
+Устройство обмазочной гидроизоляции в 2 слоя | м² | 455
+Устройство рулонной гидроизоляции в 2 слоя | м² | 715
+Устройство гидроизоляции сопряжений стен, пола | п. м | 455
+Обработка примыканий герметиком | п. м | 195
+## Тепло- и звукоизоляция
+Утепление пола пенополистиролом, пенопластом с герметизацией швов монтажной пеной | м² | 450
+Утепление пола минеральной ватой | м² | 390
+Устройство теплозвукоизоляции пола пенополистиролом | м² | 450
+## Дощатые полы и фанера
+Настил фанеры на клею с креплением к цементно-песчаной стяжке в один слой | м² | 520
+Настил фанеры с креплением к цементно-песчаной стяжке в 2 слоя | м² | 780
+Настил фанеры на дощатый пол в один слой | м² | 280
+Настил фанеры на дощатый пол в два слоя | м² | 430
+Устройство лаг по дощатому основанию под фанеру | м² | 650
+Устройство лаг по бетонному основанию под фанеру | м² | 1040
+Устройство лаг по металлическим балкам под фанеру | м² | 750
+Устройство лаг по деревянным балкам под доску | м² | 650
+Устройство лаг по бетонному основанию под доску | м² | 1040
+Устройство лаг по металлическим балкам под доску | м² | 750
+Настил доски по лагам | м² | 520
+Настил шпунтовой доски по лагам | м² | 980
+Настил листов ГВЛ на дощатый пол в один слой | м² | 650
+## Паркетная доска
+Настил паркетной доски в прямоугольном помещении | м² | 910
+Настил паркетной доски в многоугольном помещении | м² | 1210
+Настил паркетной доски в помещении с радиусом | м² | 1365
+Настил паркетной доски на клею в прямоугольном помещении | м² | 1300
+Настил паркетной доски на клею в многоугольном помещении | м² | 1820
+Настил паркетной доски на клею в помещении с радиусом | м² | 1950
+## Ламинат и подложка
+Настил ламината по прямой | м² | 650
+Настил ламината по диагонали | м² | 910
+Укладка подложки | м² | 100
+## Ковровые покрытия
+Настил штучного ковролина на клею | м² | 300
+Настил ковролина на клею | м² | 380
+## Линолеум
+Настил линолеума бытового | м² | 520
+Укладка полукоммерческого линолеума | м² | 650
+Укладка коммерческого линолеума | м² | 780
+Сварка шва линолеума | п. м | 600
+Настил штучного линолеума на клею | м² | 1250
+## Пробка и кварц-винил
+Настил пробкового покрытия замкового | м² | 650
+Настил пробкового покрытия клеевого | м² | 1040
+Настил кварц-виниловой плитки замкового типа | м² | 650
+Настил кварц-виниловой плитки клеевого типа | м² | 1040
+## Штучный паркет, шлифовка, покрытие
+Устройство покрытий из доски (массив) | м² | 980
+Укладка штучного паркета (ёлка, шашка) | м² | 1950
+Укладка штучного паркета (рисунок) | м² | 2600
+Шлифовка паркетной доски | м² | 650
+Шлифовка фанеры | м² | 260
+Шлифовка паркета | м² | 650
+Покрытие паркета маслом | м² | 200
+Покрытие паркета лаком за 3 раза | м² | 780
+Шпаклёвка паркетного пола | м² | 260
+## Плинтус
+Устройство клеевого мягкого плинтуса | п. м | 450
+Устройство пластикового плинтуса | п. м | 390
+Устройство деревянного плинтуса | п. м | 390
+Монтаж плинтуса МДФ | п. м | 520
+Окраска плинтуса | п. м | 195
+Установка декоративного порога | шт. | 260
+## Антисептирование
+Обработка бруска антисептиком | п. м | 120
+Обработка доски антисептиком | м² | 120
+## Подготовительные работы
+Подготовительные работы по защите поверхностей | м² | 100
+Настил полиэтиленовой плёнки или укрывочного картона с проклейкой швов скотчем | м² | 50
+Выемка засыпки | м³ | 2100
+Очистка поверхностей от наплывов бетонных, растворных смесей, клея, мастики (местами) | м² | 240
+
+# Фасады | fasad
+## Основные работы
+Монтаж сайдинга | м² | 1000
+Монтаж термопанелей | м² | 680
+Штукатурка фасада | м² | 500
+Покраска фасада | м² | 400
+## Облицовка фасадов под ключ
+Монтаж винилового сайдинга по готовой обрешетке (без вычета проёмов) | м² | 710
+Монтаж винилового сайдинга под ключ без утепления | м² | 910
+Монтаж винилового сайдинга под ключ с утеплением | м² | 1410
+Монтаж металлического сайдинга под ключ без утепления | м² | 1100
+Монтаж металлического сайдинга под ключ с утеплением | м² | 1610
+Монтаж фиброцементного сайдинга под ключ без утепления | м² | 1250
+Монтаж фиброцементного сайдинга под ключ с утеплением | м² | 1760
+Монтаж фасадных панелей под ключ с утеплением | м² | 1475
+Монтаж профнастила под ключ с утеплением | м² | 1410
+Монтаж блок-хауса под ключ без утепления | м² | 1160
+Монтаж блок-хауса под ключ с утеплением | м² | 1410
+Монтаж искусственного камня | м² | 4600
+## Обрешётка, утепление и защита
+Монтаж деревянной обрешетки | м² | 450
+Монтаж металлической обрешетки | м² | 585
+Монтаж контробрешетки | м² | 350
+Монтаж ветрозащитной пленки | м² | 200
+Утепление фасада 50 мм | м² | 250
+Утепление фасада 100 мм | м² | 450
+Антисептирование деревянных конструкций готовыми составом | м² | 120
+## Отливы, свесы, доски
+Монтаж оконного отлива | п. м | 450
+Монтаж цокольного отлива | п. м | 300
+Подшивка карнизных свесов (сайдинг) | п. м | 990
+Подшивка карнизных свесов (доска) | п. м | 1090
+Подшивка фронтонных выносов (сайдинг) | п. м | 990
+Монтаж карнизной доски (сайдинг) | п. м | 600
+Монтаж фронтонной доски (доска) | п. м | 900
+## Мусор, замеры, леса, бытовка
+Уборка, вынос и загрузка мусора | контейнер | 12000
+Контейнер под мусор | контейнер | 26000
+Замеры (выезд) | выезд | 4000
+Устройство лесов (расчет по площади фасада) | м² | 200
+Доставка бытовки | услуга | 18000
+Аренда бытовки | месяц | 6000
+
+# Заборы | zabor
+## Заборы, ворота, калитки
+Забор из сетки-рабицы | п. м | 450
+Забор из профлиста | п. м | 1200
+Деревянный забор | п. м | 700
+Забор из евроштакетника | п. м | 650
+Ворота и калитка | шт. | 4000
+
+# Электрика | elektrika
+## Штробление
+Штробление стены в газобетоне 20*20 | п. м | 250
+Штробление стены в кирпиче 20*20 | п. м | 350
+Штробление стены в бетоне 20*20 | п. м | 450
+Штробление бетонного потолка 20*20 | п. м | 750
+Заделка штроб, черновая | п. м | 90
+## Сквозное сверление стены
+Сквозное сверление стены Ø до 28 мм в бетоне до 20 см | п. м | 450
+Сквозное сверление стены Ø до 28 мм в бетоне до 35 см | п. м | 700
+Сквозное сверление стены Ø до 28 мм в бетоне до 50 см | п. м | 900
+Сквозное сверление стены Ø до 28 мм в кирпиче до 20 см | п. м | 350
+Сквозное сверление стены Ø до 28 мм в кирпиче до 35 см | п. м | 450
+Сквозное сверление стены Ø до 28 мм в кирпиче до 50 см | п. м | 550
+## Сверление отверстий под розетки
+Сверление отверстия под розетку, выключатель, соединительную коробку в гипсокартоне | шт. | 200
+Сверление отверстия под розетку, выключатель, соединительную коробку в газобетоне | шт. | 300
+Сверление отверстия под розетку, выключатель, соединительную коробку в кирпиче | шт. | 400
+Сверление отверстия под розетку, выключатель, соединительную коробку в бетоне | шт. | 500
+Установка монтажной коробки в готовое отверстие | шт. | 100
+## Устройство ниши под электрощит
+Устройство ниши под электрощит до 12 модулей | шт. | 1600
+Устройство ниши под электрощит до 18 модулей | шт. | 2000
+Устройство ниши под электрощит до 24 модуля | шт. | 2800
+Устройство ниши под электрощит до 32 модулей | шт. | 3900
+## Врезные светильники
+Устройство отверстий под светильники в ГКЛ | шт. | 250
+Устройство отверстий под светильники в фанере, ДСП | шт. | 350
+Установка врезных светильников | шт. | 450
+Подключение трансформатора | шт. | 600
+Установка светильников в подвесные потолки | шт. | 550
+## Накладные светильники и люстры
+Установка больших светильников | шт. | 650
+Сборка и монтаж люстр | шт. | 1200
+Установка и подключение встроенного точечного светильника готовое отверстие | шт. | 300
+Разметка и сверление отверстия (Ø до 100 мм) под встраиваемый светильник в гипсокартоне | шт. | 300
+Установка накладного светильника | шт. | 560
+Монтаж и подключение светодиодной ленты | п. м | 250
+Монтаж металлического профиля под светодиодную ленту | п. м | 300
+Установка и подключение люминесцентного светильника 2х18, 2х36, 2х58 | шт. | 600
+Установка и подключение люминесцентного светильника 4х18, 4х36, 4х58 | шт. | 900
+Установка и подключение люминесцентного светильника в потолок «Армстронг» | шт. | 450
+Установка и подключение уличного светильника | шт. | 900
+Монтаж трековой системы | п. м | 1200
+Установка и подключение трансформатора 12/24 Вольта | шт. | 450
+Установка и подключение драйвера для светодиодной ленты, светильников | шт. | 450
+Подключение патрона для временного освещения | шт. | 90
+## Розетки и выключатели
+Установка встроенных розеток и выключателей в подрозетник | шт. | 350
+Установка перекрестного переключателя (сх.7), двухклавишного переключателя(сх.6) в готовое отверстие | шт. | 400
+Установка наружных розеток и выключателей в подрозетник | шт. | 350
+Установка розеток и выключателей открытая проводка | шт. | 400
+Установка перекрестного переключателя (сх.7), двухклавишного переключателя(сх.6) (наружная, открытая электропроводка) | шт. | 450
+Установка ТВ и Компьютерных розеток скрытая проводка | шт. | 400
+Установка ТВ и Компьютерных розеток открытая проводка | шт. | 450
+## Тёплый пол
+Монтаж тёплого пола от 5м² | м² | 550
+Монтаж тёплого пола до 5м² | компл. | 5000
+Монтаж и установка терморегулятора тёплого пола | шт. | 700
+## Временное электроснабжение
+Устройство временного электроснабжения с подсоединением электропатронов и розеток | м² | 95
+## Прокладка кабелей
+Прокладка кабелей (телефонных, телевизионных, акустических и компьютерных) | п. м | 90
+Прокладка 3-х жильного кабеля сечением от 2,5 мм² включительно | п. м | 90
+Прокладка 3-х жильного кабеля сечением от 4 до 6 мм² включительно | п. м | 120
+Прокладка силового 5-ти жильного кабеля по готовым конструкциям до 5*10 | п. м | 150
+Прокладка кабелей от 5*16 до 5*35 с креплением | п. м | 400
+Прокладка кабелей от 5*16 до 5*35 по готовым конструкциям | п. м | 300
+Затяжка кабеля в гофру до 3*2,5 | п. м | 30
+Затяжка кабеля в гофру от 5*6 до 5*16 | п. м | 95
+Монтаж кабельканала 25х40 | п. м | 105
+Монтаж кабельканала 40х60 | п. м | 150
+Монтаж кабельканала 60х120 | п. м | 180
+Крепление кабеля на алебастр | п. м | 30
+Монтаж автоматов УЗО | шт. | 750
+## Силовые щиты
+Сборка и установка щитка до 8 автоматов | шт. | 3800
+Сборка и установка щитка до 12 автоматов | шт. | 5200
+Сборка и установка щитка до 18 автоматов | шт. | 7900
+Сборка и установка щитка до 24 автоматов | шт. | 9900
+Сборка и установка щитка до 32 автоматов | шт. | 14500
+Установка и подключение автомата однополюсного | шт. | 400
+Установка и подключение автомата двухполюсного | шт. | 600
+Установка и подключение автомата трёхполюсного | шт. | 700
+Установка и подключение автомата двухполюсного, УЗО, ДИФ | шт. | 600
+Установка и подключение автомата четырёхполюсного, УЗО, ДИФ | шт. | 800
+Установка и подключение УЗМ (защита от перепадов напряжения) 220V | шт. | 800
+Установка на DIN-рейку и подключение контактора, магнитного пускателя | шт. | 800
+Установка и подключение 1-ф эл. счётчика | шт. | 1550
+Установка и подключение 3-ф эл. счётчика | шт. | 2050
+## Монтажные коробки
+Установка монтажных коробок в бетоне | шт. | 480
+Установка монтажных коробок в кирп. стене | шт. | 450
+Установка монтажных коробок в ГКЛ | шт. | 350
+Установка монтажных коробок в газобетоне | шт. | 350
+## Распаячные коробки
+Разводка распаячных коробок (малых) до 12 концов | шт. | 705
+Разводка распаячных коробок (средних) от 12 до 20 концов | шт. | 1200
+Разводка распаячных коробок (больших) от 21 до 30 концов | шт. | 1600
+Разводка распаячных коробок (больших наружных) от 30 до 42 концов | шт. | 3100
+## Демонтаж
+Демонтаж автомата, УЗО, ДИФ автомата и т.п | шт. | 150
+Демонтаж электрического счётчика (однофазного, трёхфазного) | шт. | 350
+Демонтаж розетки, демонтаж выключателя и т.п. | шт. | 120
+Демонтаж открытой электропроводки, демонтаж кабеля | п. м | 40
+Демонтаж пластикового кабель-канала | шт. | 60
+Демонтаж настенного светильника | шт. | 250
+Демонтаж потолочного светильника, люстры | шт. | 300
+## Дополнительные работы
+Замена розетки/выключателя в старой установочной коробке | шт. | 400
+Замена блока выключателей туалет/ванна/кухня | шт. | 950
+Поиск и устранение неисправности в электропроводке | шт. | 1200
+Подключение силовой линии в щите на лестничной площадке (220 Вольт) | шт. | 750
+Подключение линий ТV в щите на лестничной площадке | шт. | 490
+Установка и подключение антенного делителя в квартире | шт. | 500
+Монтаж временного освещения и розеток на объекте | м² | 60
+Покупка и доставка материала на объект (на сумму до 5000 рублей) | раз | 800
+Покупка и доставка материала на объект (на сумму свыше 5000 рублей) | раз | 1500
+Монтаж нагревательного кабеля для тёплого пола | п. м | 100
+Укладка нагревательного мата для тёплого пола | м² | 450
+Установка/замена провода или вилки на электроприборах | шт. | 250
+
+# Сантехника | santehnika
+## Смесители и штробление
+Установка и подключение смесителя | шт. | 1100
+Установка и подключение смесителя с инсталляцией | шт. | 1750
+Монтаж водорозеток с настенным креплением | шт. | 395
+Устройство штробы под трубу 1/2-3/4 в бетоне | п. м | 580
+Устройство штробы под трубу 1/2-3/4 в кирпиче | п. м | 580
+## Умывальники, мойки, ванны, душ
+Установка и подключение умывальника | шт. | 1550
+Установка и подключение мойки | шт. | 2650
+Установка и подключение умывальника с тумбой | шт. | 2600
+Подключение ванны с гидромассажем | шт. | 4700
+Установка и подключение душевой кабины | шт. | 3800
+Устройство сливного трапа | шт. | 1300
+Установка душевой шторки | шт. | 1700
+Установка и подключение ванной | шт. | 3650
+## Унитазы и биде
+Установка и подключение унитаза | шт. | 2000
+Установка и подключение биде | шт. | 1850
+Установка и подключение инсталляции для подвесного унитаза | шт. | 6300
+Установка подвесного унитаза | шт. | 1850
+## Приборы и водонагреватели
+Установка водосчётчиков | шт. | 900
+Установка фильтров грубой очистки | шт. | 550
+Монтаж водяного полотенцесушителя | шт. | 3700
+Установка и подключение стиральной машины | шт. | 1850
+Установка и подключение электроводонагревателя | шт. | 4100
+Установка и подключение генератора для турецкой бани | шт. | 6400
+Монтаж, обвязка и подключение повышающего насоса | шт. | 8700
+Монтаж и подключение газовой колонки | шт. | 4200
+## Коллекторы и стояки
+Сборка, установка и подключение коллектора | шт. | 2700
+Монтаж коллекторного шкафа | шт. | 2000
+Устройство стояка хол., гор. водоснабжения с врезкой крана из пластика | шт. | 2700
+Устройство канализационного стояка из полипропилена компл(ванна,раковина,унитаз,стир.машина) | компл. | 3200
+Устройство канализационного стояка из чугуна | п. м | 2100
+Замена трубопроводов ПВХ 40-100 мм | п. м | 685
+Замена трубопроводов ПВХ 16-32 мм | п. м | 455
+Разводка канализационных труб | п. м | 555
+## Радиаторы и трубопроводы
+Монтаж и подключение радиаторов | шт. | 2200
+Устройство стояка отопления (в границах помещения) | шт. | 1700
+Устройство стояка отопления (в не границах помещения) | шт. | 2500
+Устройство обвязки радиатора от стояка отопления | шт. | 1700
+Прокладка трубопроводов водоснабжения из напорных полиэтиленовых труб низкого давления с наружным Д 20 при коллекторной разводке | п. м | 350
+Прокладка трубопроводов водоснабжения из напорных полиэтиленовых труб низкого давления с наружным Д 25 | п. м | 360
+Теплоизоляция труб | п. м | 280
+
+# Водоснабжение | vodosnab
+## Монтаж водоснабжения
+Монтаж греющего кабеля (до 10 м) | шт. | 4000
+Монтаж греющего кабеля (до 10 м) с врезкой в систему | шт. | 6000
+Монтаж насосной станции водоснабжения | шт. | 6000
+Монтаж точки выхода воды ХВС / ГВС | шт. | 2000
+Монтаж установочного уголка (Ду 20х1/2) выход воды 1 точка | шт. | 3000
+Монтаж установочного уголка (Ду 25х1/2) выход воды 1 точка | шт. | 3000
+Монтаж реле давления (с врезкой в систему и подключением) водоснабжения | шт. | 3000
+Монтаж защиты сухого хода (с врезкой в систему и подключением) водоснабжения | шт. | 3000
+Врезка крана либо обратного клапана в водопровод Ду до 20 мм (полимерные трубы) | шт. | 4000
+Врезка крана либо обратного клапана в водопровод Ду от 20 до 32 мм (полимерные трубы) | шт. | 5000
+Врезка крана либо обратного клапана в водопровод Ду от 40 до 50 мм (полимерные трубы) | шт. | 6000
+Врезка манометра | шт. | 2000
+Монтаж бойлера (водонагревателя) косвенного нагрева (контур отопления и ГВС) | шт. | 16000
+Монтаж / обвязка накопительного бака | шт. | 8000
+Монтаж проточного / электрического водонагревателя | шт. | 10000
+Монтаж мембранного бака (гидроаккумулятора) для водоснабжения | шт. | 6000
+Монтаж мембранного бака (гидроаккумулятора) для водоснабжения с блоком управления для насоса | шт. | 8000
+Монтаж системы защиты от протечек на ХВС и или ГВС 1" (без прокладки кабелей) | шт. | 4000
+Монтаж труб водоснабжения (сшитый полиэтилен, Ду до 32 мм) | п. м | 1000
+Монтаж труб водоснабжения (металлопласт, Ду до 32 мм) | п. м | 1000
+Монтаж труб водоснабжения (полипропилен, Ду до 32 мм) | п. м | 1500
+Монтаж коллектора (гребенки) водоснабжения до 2-х выходов (Ду до 1") | шт. | 4000
+Монтаж коллектора (гребенки) водоснабжения до 6-и выходов (Ду до 1") | шт. | 6000
+Монтаж коллектора (гребенки) водоснабжения до 12-и выходов (Ду до 1") | шт. | 8000
+Установка регулятора давления воды (Д от 1/2" до 3/4") | шт. | 3000
+Установка регулятора давления воды (Д от 1" до 1 1/4") | шт. | 4000
+Нарезание резьбы на трубопроводе (Д до 1") | шт. | 3000
+Нарезание резьбы на водопроводе (Д от 1 1/4"до 2") | шт. | 4000
+Установка вентиля-крана водоснабжения 3-х проходного | шт. | 2000
+Монтаж фильтров тонкой очистки воды с подключением к канализации (обратный осмос) | шт. | 8000
+Монтаж фильтра тонкой / грубой очистки воды | шт. | 5000
+Установка крана или обратного клапана водоснабжения (Д от 1/2" до 3/4") | шт. | 2000
+Установка крана или обратного клапана водоснабжения (Д от 1" до 1 1/4") | шт. | 3000
+Установка крана или обратного клапана водоснабжения (Д от 1 1/2" до 2") | шт. | 4000
+Монтаж циркуляционного насоса ГВС (полимерными трубами) | шт. | 4000
+Монтаж газовой колонки (полимерными трубами) | шт. | 12000
+Монтаж / врезка счетчика воды Д 1/2" | шт. | 3000
+Монтаж / врезка счетчика воды Д 3/4" | шт. | 4000
+Монтаж / врезка счетчика воды Д 1" | шт. | 5000
+Монтаж / врезка счетчика воды Д 1 1/4" | шт. | 6000
+Монтаж / врезка счетчика воды Д 1 1/2" | шт. | 7000
+## Ремонт водоснабжения
+Замена насосной станции водоснабжения | шт. | по договорённости
+Замена циркуляционного насоса ГВС | шт. | 4000
+Устранение течи трубы водоснабжения (полимерные трубы, Ду от 16 до 32 мм) | шт. | 4000
+Устранение течи трубы водоснабжения (полимерные трубы, Ду от 40 до 50 мм) | шт. | 6000
+Замена установочного уголка (Ду 20х1/2) | шт. | 3000
+Замена установочного уголка (Ду 25х1/2) | шт. | 4000
+Замена реле давления водоснабжения | шт. | 4000
+Замена защиты от сухого хода водоснабжения | шт. | 4000
+Замена шарового крана (Д от 1/2" до 3/4") либо обратного клапана водоснабжения | шт. | 4000
+Замена шарового крана (Д от 1" до 1 1/4") либо обратного клапана водоснабжения | шт. | 5000
+Замена шарового крана (Д от 1 1/2" до 2") либо обратного клапана водоснабжения | шт. | 6000
+Замена манометра | шт. | 3000
+Замена фильтра тонкой / грубой очистки воды | шт. | 6000
+Замена картриджа в фильтре очистки воды | шт. | 2000
+Замена электрического бойлера (водонагревателя) | шт. | 14000
+Замена бойлера косвенного нагрева (контур отопления и ГВС) | шт. | 18000
+Замена мембранного бака (гидроаккумулятора) до 100 л. | шт. | 6000
+Замена мембранного бака (гидроаккумулятора) от 100 до 200 л. | шт. | 8000
+Замена мембранного бака (гидроаккумулятора) от 200 л. | шт. | 10000
+Замена мембранного бака (гидроаккумулятора) для водоснабжения (на готовую подводку) с блоком управления для насоса, с корректировкой давления | шт. | 12000
+Замена уплотнительных прокладок (Д от 1/2" до 3/4") | шт. | 1000
+Замена уплотнительных прокладок (Д от 1" до 1 1/4") | шт. | 2000
+Замена уплотнительных прокладок (Д от 1 1/2" до 2") | шт. | 3000
+Замена газовой колонки (на готовую подводку) | шт. | 10000
+Замена счетчика воды Д 1/2" | шт. | 4000
+Замена счетчика воды Д 3/4" | шт. | 5000
+Замена счетчика воды Д 1" | шт. | 6000
+Замена счетчика воды Д 1 1/4" | шт. | 7000
+Замена счетчика воды Д 1 1/2" | шт. | 8000
+Замена анода в напольном бойлере (без слива) | шт. | 4000
+Замена анода в напольном / настенном бойлере (с полным сливом) | шт. | 8000
+Разморозка труб водоснабжения Ду от 25 до 100 мм до 5 м | шт. | 6000
+Разморозка труб водоснабжения Ду от 25 до 100 мм от 5 до 10 м | шт. | 8000
+Разморозка труб водоснабжения Ду от 25 до 100 мм от 10 до 15 м | шт. | 10000
+Замена группы безопасности (без слива бойлера) | шт. | 4000
+Замена группы безопасности (со сливом бойлера) | шт. | 8000
+Замена гидрострелки водоснабжения | шт. | 6000
+Замена коллектора (гребенки) водоснабжения до 2-х выходов (Ду до 1") | шт. | 6000
+Замена коллектора (гребенки) водоснабжения до 6-и выходов (Ду до 1") | шт. | 8000
+
+# Канализация | kanal
+## Монтаж канализации
+Разводка канализации Ду 40 - 50 мм | точка | 1000
+Разводка канализации Ду 110 мм | точка | 1300
+Монтаж труб внутренней канализации Ду 40 - 50 мм | п. м | 200
+Монтаж труб внутренней канализации Ду 110 мм | п. м | 350
+Монтаж труб наружной канализации в готовой траншее Ду 110 мм | п. м | 400
+Теплоизоляция труб канализации Ду 40 - 50 мм | п. м | 100
+Теплоизоляция труб канализации Ду 110 мм | п. м | 150
+Подключение септика канализационной трубой Ду 110 мм (обвязка септика) | шт. | 3000
+Монтаж фекального насоса Ду до 32 мм | шт. | 3000
+Монтаж установочного фекального насоса Ду до 32 мм | шт. | 6000
+Установка канализационного трапа Ду 40 - 50 мм | шт. | 1500
+Установка канализационного трапа Ду 110 мм | шт. | 2000
+## Ремонт наружной канализации (без земляных работ)
+Замена трубы канализации ПВХ Ду 40 - 50 мм | п. м | 1500
+Замена трубы канализации ПВХ Ду 110 мм | п. м | 2000
+Замена фекального насоса Ду до 32 мм | шт. | 3500
+Замена установочного фекального насоса Ду до 32 мм | шт. | 8000
+## Ремонт внутренней канализации
+Замена трубы канализации ПВХ Ду 40 - 50 мм | п. м | 1500
+Замена трубы канализации ПВХ Ду 110 мм | п. м | 2000
+Замена соединительных элементов Ду 50 мм | шт. | 1500
+Замена соединительных элементов Ду 110 мм | шт. | 2000
+Замена канализационного стояка | шт. | 4000
+Замена прокладки Ду 40 - 50 мм | шт. | 1500
+Замена прокладки Ду 110 мм | шт. | 2000
+Замена гофропровода унитаза (со снятием унитаза) | шт. | 2000
+Замена манжета унитаза (со снятием унитаза) | шт. | 2000
+Замена сифона | шт. | 1000
+Замена сололифта (малого) | шт. | 3000
+Замена сололифта (большого) | шт. | 4000
+Замена жироуловителя | шт. | 2500
+Демонтаж канализационных труб из ПВХ (Ду до 110 мм) | п. м | 200
+Демонтаж чугунных канализационных труб (Ду до 50 мм) | п. м | 500
+Демонтаж чугунных канализационных труб (Ду до 100 мм) | п. м | по договорённости
+
+# Отопление и котлы | otoplenie
+## Монтаж отопления
+Монтаж / врезка расширительного бака отопления | шт. | 6000
+Монтаж трубы отопления (сшитый полиэтилен, Ду до 32 мм) | п. м | 1000
+Монтаж трубы отопления (металлопласт, Ду до 32 мм) | п. м | 1000
+Монтаж трубы отопления (полипропилен, Ду до 32 мм) | п. м | 1500
+Монтаж коллектора (гребенки) отопления до 2-х выходов (Ду до 1") | шт. | 4000
+Монтаж коллектора (гребенки) отопления до 6-и выходов (Ду до 1") | шт. | 8000
+Монтаж коллектора (гребенки) отопления до 12-и выходов (Ду до 1") | шт. | 12000
+Нарезание резьбы на трубопроводе отопления (Ду до 1") | шт. | 2000
+Нарезание резьбы на трубопроводе отопления (Ду от 1 1/4"до 2") | шт. | 3000
+Монтаж водяного теплого пола Ду 16 мм (полимерной трубой) | м² | 500
+Монтаж внутреннего терморегулятора для водяного теплого пола | шт. | 4000
+Монтаж и обвязка сантехнического шкафа (с комплектом коллекторов) отопления | шт. | по договорённости
+Установка крана или обратного клапана отопления (Ду от 1/2" до 3/4") | шт. | 2000
+Установка крана или обратного клапана отопления (Ду от 1" до 1 1/4") | шт. | 3000
+Установка крана или обратного клапана отопления (Ду от 1 1/2" до 2") | шт. | 4000
+Установка терморегулятора на радиатор | шт. | 1000
+Съём-навеска радиатора для проведения отделочных работ | шт. | 1000
+Монтаж внутрипольного конвектора (полимерными трубами) | шт. | 8000
+Монтаж радиатора отопления (полимерными трубами) | шт. | 6000
+Монтаж радиатора отопления (с прокладкой трубопровода) | шт. | 10000
+Монтаж / врезка циркуляционного насоса отопления (полимерными трубами) | шт. | 6000
+Бурение отверстия в стене для прокладки трубопровода (Ду 1/2" до 2") | шт. | 2000
+Врезка крана / обратного клапана / грязевого фильтра в отопительную магистраль Ду до 20 мм (полимерные трубы) | шт. | 4000
+Врезка крана / обратного клапана / грязевого фильтра в отопительную магистраль Ду от 25 до 32 мм (полимерные трубы) | шт. | 5000
+Врезка крана / обратного клапана / грязевого фильтра в отопительную магистраль Ду от 40 до 50 мм (полимерные трубы) | шт. | 6000
+Монтаж гидрострелки с коллектором до 4-х выходов | шт. | 8000
+Монтаж гидрострелки с коллектором до 6-ти выходов | шт. | 14000
+Монтаж гидрострелки с коллектором до 8-ми выходов | шт. | 20000
+Монтаж гидрострелки с коллектором более 8-ми выходов | шт. | по договорённости
+Монтаж и обвязка насосной группы | шт. | 5000
+## Ремонт и обслуживание отопления
+Устранение течи трубы отопления (полимерные трубы, Ду от 16 до 32 мм) | шт. | 4000
+Устранение течи трубы отопления (полимерные трубы, Ду от 40 до 50 мм) | шт. | 6000
+Заглушить трубопровод отопления (Ду от 16 до 32 мм) | шт. | 2000
+Заглушить трубопровод отопления (Ду от 40 до 50 мм) | шт. | 3000
+Замена вентиля на радиаторе отопления | шт. | 2000
+Замена взрывного предохранительного клапана отопления | шт. | 3000
+Замена автоматического воздухоудалителя отопления | шт. | 2000
+Замена шарового крана (Ду от 1/2" до 3/4") либо обратного клапана отопления | шт. | 4000
+Замена шарового крана (Ду от 1" до 1 1/4") либо обратного клапана отопления | шт. | 5000
+Замена шарового крана (Ду от 1 1/2" до 2") либо обратного клапана отопления | шт. | 6000
+Замена коллектора (гребенки) отопления до 2-х выходов (Ду до 1") | шт. | 4000
+Замена коллектора (гребенки) отопления до 6-и выходов (Ду до 1") | шт. | 8000
+Замена коллектора (гребенки) отопления до 12-и выходов (Ду до 1") | шт. | 12000
+Замена циркуляционного насоса отопления | шт. | 4000
+Замена радиатора отопления без переделки трубопроводов (полимерные трубы) | шт. | 4000
+Замена радиатора отопления с доработкой подводки для подключения полимерными трубами | шт. | 8000
+Замена радиатора отопления с доработкой подводки для подключения стальной или медной трубой | шт. | 16000
+Съём-навеска радиатора отопления для проведения отделочных работ | шт. | 1000
+Настройка теплоотдачи радиатора отопления | шт. | 2000
+Замена термоголовки и клапана в радиаторе | шт. | 2000
+Замена группы безопасности | шт. | 4000
+Частичный слив системы отопления с последующим ее заполнением (с применением насоса) | шт. | 4000
+Полный слив системы отопления с последующим ее заполнением (замена теплоносителя, дом до 100 м²) | компл. | 6000
+Полный слив системы отопления с последующим ее заполнением (замена теплоносителя, дом от 100 до 150 м²) | компл. | 8000
+Полный слив системы отопления с последующим ее заполнением (замена теплоносителя, дом от 150 до 200 м²) | компл. | 10000
+Полный слив системы отопления с последующим ее заполнением (замена теплоносителя, дом от 200 до 250 м²) | компл. | 12000
+Полный слив системы отопления с последующим ее заполнением (замена теплоносителя, дом от 250 м²) | компл. | по договорённости
+Утилизация теплоносителя до 100 л (тара клиента) | компл. | 5000
+Утилизация теплоносителя до 100 л (с тарой) | компл. | 8000
+Утилизация теплоносителя до 200 л (тара клиента) | компл. | 8000
+Утилизация теплоносителя до 200 л (с тарой) | компл. | 12000
+Утилизация теплоносителя до 300 л (тара клиента) | компл. | 10000
+Утилизация теплоносителя до 300 л (с тарой) | компл. | 16000
+Утилизация теплоносителя от 300 л (тара клиента) | компл. | по договорённости
+Утилизация теплоносителя от 300 л (с тарой) | компл. | по договорённости
+Замена расширительного бака отопление (на готовую подводку) | шт. | 4000
+Замена расширительного бака отопление (с доработкой) | шт. | 6000
+Замена уплотнительных прокладок (Д от 1/2" до 3/4") | шт. | 1000
+Замена уплотнительных прокладок (Д от 1" до 1 1/4") | шт. | 2000
+Замена уплотнительных прокладок (Д от 1 1/2" до 2") | шт. | 3000
+Замена гидрострелки | шт. | 6000
+Замена насосной группы / группы быстрого монтажа (прямой контур) | шт. | 6000
+Замена насосной группы / группы быстрого монтажа (с 3-х ходовым клапаном) | шт. | 8000
+Замена насосной группы / группы быстрого монтажа (с 4-х ходовым клапаном) | шт. | 10000
+Замена коллектора насосной группы 2 - 4 выхода | шт. | 8000
+Замена коллектора насосной группы 6 - 8 выходов | шт. | 14000
+Замена коллектора насосной группы 10 - 12 выходов | шт. | 20000
+## Монтаж котлов
+Монтаж (обвязка) настенного газового турбированного котла с присоединением дымохода без учета отверстия (с обвязкой отопительного контура) | шт. | 15000
+Обвязка настенного газового двухконтурного котла (контур водоснабжения) | шт. | 6000
+Монтаж (обвязка) настенного конденсационного газового котла до 99 кВт с присоединением дымохода без учета отверстия (с обвязкой отопительного контура) | шт. | 20000
+Монтаж (обвязка) настенного конденсационного газового котла от 100 кВт с присоединением дымохода без учета отверстия (с обвязкой отопительного контура) | шт. | по договорённости
+Монтаж (обвязка) напольного газового котла до 39 кВт с присоединением к дымоходу (отопительный контур) | шт. | 20000
+Обвязка напольного газового двухконтурного котла (контур водоснабжения без циркуляции) | шт. | 8000
+Обвязка напольного газового двухконтурного котла (контур водоснабжения с циркуляцией) | шт. | 10000
+Монтаж (обвязка) напольного газового котла от 40 кВт до 99 кВт с присоединением дымохода без учета отверстия (с обвязкой отопительного контура | шт. | 26000
+Монтаж (обвязка) напольного газового котла более 100 кВт (полимерными трубами) | шт. | по договорённости
+Монтаж (обвязка) дизельного котла до 39 кВт с присоединением к готовому дымоходу (отопительный контур) | шт. | 20000
+Монтаж (обвязка) дизельного котла от 40 кВт до 99 кВт с присоединением к готовому дымоходу (отопительный контур) | шт. | 26000
+Монтаж (обвязка) дизельного котла более 100 кВт с присоединением к готовому дымоходу (отопительный контур) | шт. | по договорённости
+Монтаж дизельной / газовой горелки до 40 кВт | шт. | 6000
+Монтаж дизельной / газовой горелки от 41 кВт до 100 кВт | шт. | 10000
+Монтаж дизельной / газовой горелки от 100 кВт | шт. | по договорённости
+Монтаж (обвязка) электрического котла (без подключения к электросети) | шт. | 12000
+Бурение отверстия в стене под коаксиальный дымоход (каркас, пено-/газо- блок, сендвич-панели) | шт. | 5000
+Бурение отверстия в стене под коаксиальный дымоход (каркас, пено-/газо- блок, сендвич-панели с внешней отделкой) | шт. | 8000
+Бурение отверстия в стене под коаксиальный дымоход (бетон, кирпич, дерево) | шт. | 10000
+Установка на коаксиальный дымоход насадки антилёд | шт. | 2000
+## Пусконаладка котлов
+Пусконаладка настенного газового турбированного котла | шт. | 5000
+Пусконаладка газового конденсационного котла до 99 кВт | шт. | 8000
+Пусконаладка газового конденсационного котла от 100 кВт | шт. | по договорённости
+Пусконаладка напольного атмосферного (с открытой камерой сгорания) газового котла до 99 кВт | шт. | 6000
+Пусконаладка напольного атмосферного (с открытой камерой сгорания) газового котла от 100 до 299 кВт | шт. | 8000
+Пусконаладка напольного газового / дизельного котла с наддувной горелкой до 40 кВт | шт. | 8000
+Пусконаладка напольного газового / дизельного котла с наддувной горелкой от 41 до 99 кВт | шт. | 10000
+Пусконаладка напольного газового / дизельного котла с наддувной горелкой от 100 кВт | шт. | по договорённости
+Установка, настройка, замена элементов автоматики и дополнительного оборудования | шт. | по договорённости
+
+# Демонтаж и снос | demontazh
+## Основные работы
+Демонтаж стен (1/4 кирпича) | м² | 380
+Демонтаж стен (1/2 кирпича) | м² | 600
+Демонтаж стен (1 кирпич) | м² | 850
+Демонтаж стен (1,5 кирпича и выше) | м² | 1600
+Демонтаж стен из железобетона толщиной 8 см | м² | 2600
+Демонтаж стен из железобетона толщиной 16 см | м² | 3900
+Демонтаж стен из железобетона толщиной 21 см | м² | 6500
+Снос деревянных стен (без дранки) | м² | 455
+Снос деревянных стен (с дранкой) | м² | 600
+Демонтаж гипсокартонных, офисных перегородок | м² | 455
+Сбивка старой штукатурки со стен | м² | 390
+Очистка стен от шпаклёвки | м² | 325
+Снятие обоев со стен (1 слой) | м² | 325
+Снятие обоев со стен (2-3 слоя) | м² | 390
+Демонтаж встроенных шкафов, купе, антресолей | м² | 650
+Демонтаж кафеля, керамогранита | м² | 390
+Демонтаж вагонки, панелей ПВХ, МДФ, ДСП со стен | м² | 390
+Демонтаж каркаснообшивных перегородок из дерева | м² | 455
+Демонтаж обшивки стен из ГКЛ на металлокаркасе | м² | 390
+Демонтаж стен из ГКЛ | м² | 250
+Демонтаж стен из асбестоцементных плит | м² | 440
+Удаление краски со стен | м² | 325
+Удаление побелки со стен | м² | 350
+Снос перегородки туалет - ванная | шт. | 8000
+## Снос построек
+Снос небольших построек (бани, гаражи, сараи): 1 день, бригада 3 человека, вывоз мусора в контейнер, уборка участка | объект | 25000
+Снос небольшого дома: 1 день, бригада 5–8 человек, полная разборка, вывоз мусора, при необходимости демонтаж фундамента, уборка участка | объект | 85000
+Снос большого каменного или деревянного дома: от 1 дня, бригада 10–15 человек, спецтехника, вывоз мусора, уборка участка | объект | 150000
+</script>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function () {
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0"); }
+  function money(p) {
+    p = p.trim();
+    var fixed = p.charAt(0) === "=";
+    if (fixed) p = p.slice(1).trim();
+    var d = p.replace(/^от\s*/i, "").replace(/\s/g, "");
+    if (/^\d+$/.test(d)) {
+      var v = parseInt(d, 10);
+      if (!fixed) v = Math.max(ROUND_TO, Math.round(v * (1 - DISCOUNT / 100) / ROUND_TO) * ROUND_TO);
+      return PREFIX + fmt(v) + "\u00a0₽";
+    }
+    return esc(p || "по договорённости");
+  }
+  var lines = document.getElementById("price-data").textContent.split("\n");
+  var html = "", sec = false, tbl = false, first = true;
+  function endTable() { if (tbl) { html += "</table>"; tbl = false; } }
+  function endSection() { endTable(); if (sec) { html += "</div></details>"; sec = false; } }
+  lines.forEach(function (raw) {
+    var line = raw.trim();
+    if (!line) return;
+    if (line.indexOf("## ") === 0) {
+      endTable();
+      html += '<div class="price-group">' + esc(line.slice(3)) + "</div>";
+    } else if (line.charAt(0) === "#") {
+      endSection();
+      var parts = line.replace(/^#\s*/, "").split("|");
+      var id = (parts[1] || "").trim();
+      html += '<details class="price-block"' + (id ? ' id="price-' + esc(id) + '"' : "") + (first && OPEN_FIRST ? " open" : "") + "><summary>" + esc(parts[0].trim()) + '</summary><div class="details-body">';
+      sec = true; first = false;
+    } else if (sec) {
+      var c = line.split("|");
+      var name = c[0].trim(), unit = (c[1] || "").trim(), pr = c.slice(2).join("|");
+      if (!tbl) { html += '<table class="price-table">'; tbl = true; }
+      html += "<tr><td>" + esc(name) + '</td><td class="u">' + esc(unit) + '</td><td class="p">' + money(pr) + "</td></tr>";
+    }
+  });
+  endSection();
+  document.getElementById("price-blocks").innerHTML = html;
+
+  function go(id, smooth) {
+    var el = id && document.getElementById(id);
+    if (el && el.tagName === "DETAILS") {
+      el.open = true;
+      setTimeout(function () { el.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" }); }, 60);
+    }
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[data-go]");
+    if (a) go(a.getAttribute("data-go"), true);
+  });
+  window.addEventListener("hashchange", function () { go(location.hash.slice(1), true); });
+  if (location.hash) go(location.hash.slice(1), false);
+
+  var lb = document.getElementById("lb");
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    if (t.tagName === "IMG" && t.closest && t.closest(".photo")) { lb.querySelector("img").src = t.src; lb.classList.add("on"); }
+    else if (lb.contains(t)) { lb.classList.remove("on"); }
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") lb.classList.remove("on"); });
+})();
+</script>
 </body>
 </html>
